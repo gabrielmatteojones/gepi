@@ -41,4 +41,14 @@ collections:
       - { label: "Layout", name: "layout", widget: "hidden", default: "page" }  # campo layout
       - { label: "Autore", name: "author", widget: "string" }
       - { label: "Lingua", name: "lang", widget: "string" }
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "content/blog"
+    create: true
+    slug: "{{slug}}" # fallback automatico dallo title
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Permalink", name: "permalink", widget: "string", required: false, hint: "Inserisci un URL personalizzato, es: /blog/mio-articolo" }
+      - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Contenuto", name: "body", widget: "markdown" }
