@@ -15,7 +15,7 @@ tags:
   - politica USA
   - sicurezza
 categories:
-  - Cronaca internazionale
+  - gossip
 description: Giorgio Armani lascia il 100% della società alla Fondazione Armani.
   Il compagno Dell’Orco avrà l’usufrutto del palazzo di Milano e il 40% dei
   diritti di voto. Entro 18 mesi cessione del 15% a LVMH, EssilorLuxottica o
