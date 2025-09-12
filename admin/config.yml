@@ -3,15 +3,15 @@ backend:
   branch: "48891"  # o master, a seconda del tuo repo
 
 media_folder: "assets/images"   # dove vengono salvate le immagini
-public_folder: "/assets/images"
+public_folder: "/assets/images"  # percorso pubblico per le immagini
 
 collections:
-  # COLLEZIONE POST
+  # COLLEZIONE ARTICOLI
   - name: "articoli"
     label: "Articoli"
-    folder: "_posts"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    folder: "_posts"  # directory dove vengono memorizzati gli articoli
+    create: true  # permette di creare nuovi articoli direttamente dal CMS
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"  # formato slug per gli articoli
     fields:
       - { label: "Titolo", name: "title", widget: "string" }
       - { label: "Data", name: "date", widget: "datetime" }
@@ -28,9 +28,9 @@ collections:
   # COLLEZIONE PAGINE
   - name: "pagine"
     label: "Pagine"
-    folder: "_pages"
-    create: true
-    slug: "{{slug}}"  # per le pagine di solito non mettiamo la data
+    folder: "_pages"  # directory per le pagine
+    create: true  # permette di creare nuove pagine
+    slug: "{{slug}}"  # formato slug per le pagine
     fields:
       - { label: "Titolo", name: "title", widget: "string" }
       - { label: "Descrizione", name: "description", widget: "string" }

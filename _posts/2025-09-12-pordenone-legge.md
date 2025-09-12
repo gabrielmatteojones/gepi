@@ -8,7 +8,7 @@ tags:
   - Pordenone
   - cultura
   - eventi
-  - ""
+author: gabriel
 categories:
   - Cultura
 description: Tutto sulla 26ª edizione di Pordenone Legge, il festival letterario
