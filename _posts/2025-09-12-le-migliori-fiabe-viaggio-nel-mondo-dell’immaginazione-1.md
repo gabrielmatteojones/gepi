@@ -1,5 +1,6 @@
 ---
 title: "Le Migliori Fiabe: Viaggio nel Mondo dell’Immaginazione."
+layout: post
 date: 2025-08-10T12:12:00.000+02:00
 tags:
   - fiabe
