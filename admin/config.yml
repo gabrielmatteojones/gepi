@@ -1,23 +1,42 @@
 backend:
   name: git-gateway
-  branch: "48891"
+  branch: "48891"  # o master, a seconda del tuo repo
 
-media_folder: "assets/images"
+media_folder: "assets/images"   # dove vengono salvate le immagini
 public_folder: "/assets/images"
 
 collections:
-  - name: articoli
-    label: Articoli
-    folder: _posts
+  # COLLEZIONE POST
+  - name: "articoli"
+    label: "Articoli"
+    folder: "_posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - label: Titolo
-        name: title
-        widget: string
-      - label: Data
-        name: date
-        widget: datetime
-      - label: Contenuto
-        name: body
-        widget: markdown
+      - { label: "Titolo", name: "title", widget: "string" }
+      - { label: "Data", name: "date", widget: "datetime" }
+      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "Categorie", name: "categories", widget: "list" }
+      - { label: "Descrizione", name: "description", widget: "string" }
+      - { label: "Keywords", name: "keywords", widget: "string" }
+      - { label: "Immagine", name: "image", widget: "image" }
+      - { label: "Ref", name: "ref", widget: "string" }
+      - { label: "Autore", name: "author", widget: "string" }
+      - { label: "Lingua", name: "lang", widget: "string" }
+      - { label: "Contenuto", name: "body", widget: "markdown" }
+
+  # COLLEZIONE PAGINE
+  - name: "pagine"
+    label: "Pagine"
+    folder: "_pages"
+    create: true
+    slug: "{{slug}}"  # per le pagine di solito non mettiamo la data
+    fields:
+      - { label: "Titolo", name: "title", widget: "string" }
+      - { label: "Descrizione", name: "description", widget: "string" }
+      - { label: "Keywords", name: "keywords", widget: "string" }
+      - { label: "Immagine", name: "image", widget: "image" }
+      - { label: "Ref", name: "ref", widget: "string" }
+      - { label: "Autore", name: "author", widget: "string" }
+      - { label: "Lingua", name: "lang", widget: "string" }
+      - { label: "Contenuto", name: "body", widget: "markdown" }
