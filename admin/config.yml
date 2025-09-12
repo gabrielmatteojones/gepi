@@ -10,11 +10,11 @@ collections:
   - name: "articoli"
     label: "Articoli"
     folder: "_posts"  # directory dove vengono memorizzati gli articoli
-    create: true  # permette di creare nuovi articoli direttamente dal CMS
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"  # formato slug per gli articoli
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Titolo", name: "title", widget: "string" }
-      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }  # campo layout
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
       - { label: "Data", name: "date", widget: "datetime" }
       - { label: "Tags", name: "tags", widget: "list" }
       - { label: "Categorie", name: "categories", widget: "list" }
@@ -29,24 +29,25 @@ collections:
   # COLLEZIONE PAGINE
   - name: "pagine"
     label: "Pagine"
-    folder: "_pages"  # directory per le pagine
-    create: true  # permette di creare nuove pagine
-    slug: "{{slug}}"  # formato slug per le pagine
+    folder: "_pages"
+    create: true
+    slug: "{{slug}}"
     fields:
       - { label: "Titolo", name: "title", widget: "string" }
       - { label: "Descrizione", name: "description", widget: "string" }
       - { label: "Keywords", name: "keywords", widget: "string" }
       - { label: "Immagine", name: "image", widget: "image" }
       - { label: "Ref", name: "ref", widget: "string" }
-      - { label: "Layout", name: "layout", widget: "hidden", default: "page" }  # campo layout
+      - { label: "Layout", name: "layout", widget: "hidden", default: "page" }
       - { label: "Autore", name: "author", widget: "string" }
       - { label: "Lingua", name: "lang", widget: "string" }
-collections:
+
+  # COLLEZIONE BLOG
   - name: "blog"
     label: "Blog"
     folder: "content/blog"
     create: true
-    slug: "{{slug}}" # fallback automatico dallo title
+    slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Permalink", name: "permalink", widget: "string", required: false, hint: "Inserisci un URL personalizzato, es: /blog/mio-articolo" }
