@@ -34,18 +34,6 @@ layout: default
                   </div>
                   <p class="it-card-text">{{ page.description }}</p>
                 </div>
-
-
-                {% assign a = site.data.authors[page.author] %}
-{% if a %}
-  <p>Autore trovato: {{ a.Nome }} - {{ a.link }}</p>
-{% else %}
-  <p>Autore NON trovato: {{ page.author }}</p>
-{% endif %}
-
-
-
-
             </article>
             <!--end it-card-->
          </div>
