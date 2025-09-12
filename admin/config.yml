@@ -2,11 +2,10 @@ backend:
   name: git-gateway
   branch: 48891  # o master, a seconda del tuo repo
 
-media_folder: "assets/images"   # dove vengono salvate le immagini
+media_folder: "assets/images"
 public_folder: "/assets/images"
 
 collections:
-  # COLLEZIONE POST
   - name: "articoli"
     label: "Articoli"
     folder: "_posts"
@@ -15,8 +14,8 @@ collections:
     fields:
       - { label: "Titolo", name: "title", widget: "string" }
       - { label: "Data", name: "date", widget: "datetime" }
-      - { label: "Tags", name: "tags", widget: "list" }
-      - { label: "Categorie", name: "categories", widget: "list" }
+      - { label: "Tags", name: "tags", widget: "list", default: [] }
+      - { label: "Categorie", name: "categories", widget: "list", default: [] }
       - { label: "Descrizione", name: "description", widget: "string" }
       - { label: "Keywords", name: "keywords", widget: "string" }
       - { label: "Immagine", name: "image", widget: "image" }
@@ -25,12 +24,11 @@ collections:
       - { label: "Lingua", name: "lang", widget: "string" }
       - { label: "Contenuto", name: "body", widget: "markdown" }
 
-  # COLLEZIONE PAGINE
   - name: "pagine"
     label: "Pagine"
     folder: "_pages"
     create: true
-    slug: "{{slug}}"  # per le pagine di solito non mettiamo la data
+    slug: "{{slug}}"
     fields:
       - { label: "Titolo", name: "title", widget: "string" }
       - { label: "Descrizione", name: "description", widget: "string" }
