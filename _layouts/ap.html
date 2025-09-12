@@ -1,6 +1,11 @@
 ---
 layout: base
 ---
+  <div class="protected-container">
+
+
+
+
 
 <div class="container my-5">
   <h1 class="mb-4 text-center">Area Personale</h1>
@@ -150,3 +155,25 @@ layout: base
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap-italia/dist/js/bootstrap-italia.bundle.min.js"></script>
+
+
+
+</div>
+
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script>
+    const identity = netlifyIdentity.init();
+    const logoutBtn = document.getElementById('logout-btn');
+
+    // Verifica login
+    identity.on('init', user => {
+      if(!user) {
+        window.location.href = 'index.html'; // reindirizza se non loggato
+      }
+    });
+
+    logoutBtn.addEventListener('click', () => {
+      identity.logout();
+      window.location.href = 'index.html';
+    });
+  </script>
