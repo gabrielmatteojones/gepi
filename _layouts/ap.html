@@ -82,9 +82,80 @@ layout: base
         <div class="tab-pane fade show active custom-tab p-4" id="data-ex-tab1" role="tabpanel" aria-labelledby="tab1-tab">
           <h2 class="tab-title">Scrivania</h2>
           <p class="tab-text">Qui puoi gestire le tue attività principali e accedere alle funzioni rapide.</p>
+{% raw %}
+{% assign docs = site.docs | sort: 'date' | reverse %}
+{% for doc in docs limit:5 %}
+<div class="accordion-item">
+  <div class="accordion-header" id="heading-{{ forloop.index }}">
+    <button class="accordion-button title-snall-semi-bold collapsed" type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#collapse-{{ forloop.index }}"
+      aria-expanded="false"
+      aria-controls="collapse-{{ forloop.index }}"
+      data-focus-mouse="false">
+      <div class="button-wrapper">
+        {{ doc.title }}
+        <div class="icon-wrapper">
+          <img class="icon-folder" src="{{ '/assets/images/folder-concluded.svg' | relative_url }}" alt="folder Conclusa" role="img">
+          <span class="">{{ doc.status | default: "Conclusa" }}</span>
+        </div>
+      </div>
+    </button>
+    <p class="accordion-date title-xsmall-regular mb-0">{{ doc.date | date: "%d/%m/%Y" }}</p>
+  </div>
+
+  <div id="collapse-{{ forloop.index }}" class="accordion-collapse p-0 collapse"
+    data-bs-parent="#accordionExampleDocs"
+    role="region"
+    aria-labelledby="heading-{{ forloop.index }}">
+    <div class="accordion-body">
+      {% if doc.pratica %}
+        <p class="mb-2 fw-normal">Pratica: <span class="label">{{ doc.pratica }}</span></p>
+      {% endif %}
+
+      {% if doc.scheda_url %}
+        <a href="{{ doc.scheda_url }}" class="mb-2">
+          <span class="t-primary">Scheda servizio</span>
+        </a>
+      {% endif %}
+
+      {% if doc.tags %}
+        {% for tag in doc.tags %}
+          <a class="chip chip-simple" href="{{ '/docs/tags/' | append: tag | relative_url }}">
+            <span class="chip-label">{{ tag }}</span>
+          </a>
+        {% endfor %}
+      {% endif %}
+
+      {% if doc.links %}
+      <div class="cmp-icon-list">
+        <div class="link-list-wrapper">
+          <ul class="link-list">
+            {% for link in doc.links %}
+            <li class="shadow p-0">
+              <a class="list-item icon-left t-primary title-small-semi-bold" href="{{ link.url }}" aria-label="{{ link.label }}">
+                <span class="list-item-title-icon-wrapper">
+                  <svg class="icon icon-sm align-self-start icon-color" aria-hidden="true">
+                    <use href="{{ '/assets/bootstrap-italia/dist/svg/sprites.svg#it-clip' | relative_url }}"></use>
+                  </svg>
+                  <span class="list-item-title title-small-semi-bold">{{ link.label }}</span>
+                </span>
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endfor %}
+{% endraw %}
+
         </div>
         <div class="tab-pane fade custom-tab p-4" id="data-ex-tab2" role="tabpanel" aria-labelledby="tab2-tab">
-          <h2 class="tab-title">E-Mail in evidenza</h2>
+          <h2 class="tab-title">Articoli</h2>
           <p class="tab-text">Visualizza qui le email più importanti o segnalate.</p>
         </div>
         <div class="tab-pane fade custom-tab p-4" id="data-ex-tab3" role="tabpanel" aria-labelledby="tab3-tab">
@@ -99,53 +170,3 @@ layout: base
     </div>
   </div>
 </div>
-
-<style>
-  /* Rimuovo i bordi delle tab */
-  .nav-tabs {
-    border-bottom: none;
-  }
-
-  /* Miglioro il look dei pulsanti */
-  .nav-tabs .nav-link {
-    border: none;
-    background: transparent;
-    font-weight: 500;
-    padding: 0.75rem 1rem;
-    border-radius: 0.75rem;
-    transition: background 0.2s ease, color 0.2s ease;
-  }
-
-  .nav-tabs .nav-link.active {
-    background: #f3f6fa;
-    color: #0d6efd;
-    font-weight: 600;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-  }
-
-  /* Design schede */
-  .custom-tab {
-    background: #fdfdfd;
-    border-radius: 1rem;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    margin-bottom: 1rem;
-    animation: fadeIn 0.3s ease;
-  }
-
-  .tab-title {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-  }
-
-  .tab-text {
-    font-size: 1rem;
-    color: #555;
-  }
-
-  /* Piccola animazione per il contenuto */
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-</style>
