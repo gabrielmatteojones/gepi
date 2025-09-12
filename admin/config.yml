@@ -9,7 +9,7 @@ collections:
   # COLLEZIONE ARTICOLI
   - name: "articoli"
     label: "Articoli"
-    folder: "_posts"  # directory dove vengono memorizzati gli articoli
+    folder: "_posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
@@ -49,7 +49,7 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Titolo", name: "title", widget: "string" }
       - { label: "Permalink", name: "permalink", widget: "string", required: false, hint: "Inserisci un URL personalizzato, es: /blog/mio-articolo" }
       - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Contenuto", name: "body", widget: "markdown" }
+      - { label: "Contenuto", name: "content", widget: "markdown" }
