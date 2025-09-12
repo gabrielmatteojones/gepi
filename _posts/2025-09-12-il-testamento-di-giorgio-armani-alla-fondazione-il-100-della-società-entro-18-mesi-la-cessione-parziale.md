@@ -2,7 +2,7 @@
 title: "Il testamento di Giorgio Armani: alla Fondazione il 100% della società,
   entro 18 mesi la cessione parziale"
 layout: post
-date: 2025-09-12T22:23:00.000+02:00
+date: 2025-09-12T18:58:00.000+02:00
 tags:
   - ...
 categories:
