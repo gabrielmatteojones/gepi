@@ -8,7 +8,6 @@ tags:
   - Pordenone
   - cultura
   - eventi
-author: gabriel
 categories:
   - Cultura
 description: Tutto sulla 26ª edizione di Pordenone Legge, il festival letterario
@@ -19,6 +18,7 @@ keywords: Pordenone Legge 2025, festival del libro, libri, scrittori, cultura,
 image: https://static.pordenonelegge.it/assets/notizie/2022/angelo-1.jpg
 ref: PL2025
 lang: it
+author: gabriel
 ---
 La 26ª edizione di **Pordenone Legge** si terrà dal **17 al 21 settembre 2025** nella città friulana di Pordenone. Questo festival letterario è uno dei più prestigiosi in Italia, attirando ogni anno oltre **100.000 appassionati** di libri e visitatori da tutto il mondo. La partecipazione a tutti gli incontri è gratuita.
 
