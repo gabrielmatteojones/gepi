@@ -2,164 +2,199 @@
 layout: base
 ---
 
-<section class="it-hero-wrapper it-hero-small-theme bg-light" aria-label="Area personale">
+<section class="it-hero-wrapper it-hero-small-size it-hero-small-theme bg-light">
   <div class="it-hero-text-wrapper">
-    <h1 class="it-hero-title">Area Personale</h1>
-    <p class="it-hero-subtitle">Benvenuto, <strong>Gabriel Jones</strong> 👋</p>
+    <h1 class="it-hero-title">Dashboard Personale</h1>
+    <p class="it-hero-subtitle">Bentornato, <strong>Gabriel Jones</strong> 👋</p>
   </div>
 </section>
 
 <div class="container my-4">
+
   <!-- Breadcrumb -->
   <nav class="cmp-breadcrumbs mb-3" aria-label="breadcrumb">
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="/">Home</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Area personale</li>
+      <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
     </ol>
   </nav>
 
-  <div class="row">
-    <!-- Profilo -->
-    <div class="col-12 col-lg-4">
-      <div class="it-card-wrapper mb-4">
-        <div class="it-card">
-          <div class="it-card-header d-flex align-items-center">
-            <div class="avatar size-xl me-3">
-              <img src="https://static.pordenonelegge.it/assets/notizie/2022/angelo-1.jpg" alt="Profilo" class="rounded-circle">
-            </div>
-            <div>
-              <h5 class="mb-0">Gabriel Jones</h5>
-              <small class="text-muted">Utente Premium</small>
-            </div>
-          </div>
-          <div class="it-card-body">
-            <p class="mb-1">Codice Fiscale: <strong>JNSGRL08H11L424Z</strong></p>
-            <span class="badge badge-success">Online</span>
+  <div class="row g-4">
+    <!-- KPI -->
+    <div class="col-6 col-lg-3">
+      <div class="it-card-wrapper">
+        <div class="it-card it-card-small">
+          <div class="it-card-body text-center">
+            <h5 class="it-card-title">Progetti</h5>
+            <p class="display-5 fw-bold text-primary">12</p>
+            <small class="text-muted">Attivi</small>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Sezioni -->
-    <div class="col-12 col-lg-8">
-      <div class="cmp-nav-tab">
-        <ul class="nav nav-tabs nav-tabs-icon-text" role="tablist">
-          <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#scrivania" role="tab"><svg class="icon icon-sm"><use href="/media/sprites.svg#it-pa"></use></svg> Scrivania</a></li>
-          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#email" role="tab"><svg class="icon icon-sm"><use href="/media/sprites.svg#it-mail"></use></svg> E-Mail</a></li>
-          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#documenti" role="tab"><svg class="icon icon-sm"><use href="/media/sprites.svg#it-files"></use></svg> Documenti</a></li>
-          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#portale" role="tab"><svg class="icon icon-sm"><use href="/media/sprites.svg#it-settings"></use></svg> Portale</a></li>
-        </ul>
-
-        <div class="tab-content mt-3">
-
-          <!-- SCRIVANIA -->
-          <div class="tab-pane fade show active" id="scrivania" role="tabpanel">
-            <div class="row g-3">
-              <!-- Task -->
-              <div class="col-12 col-md-6">
-                <div class="it-card-wrapper">
-                  <div class="it-card">
-                    <div class="it-card-body">
-                      <h5 class="it-card-title">Task di Oggi</h5>
-                      <ul class="it-list">
-                        <li class="it-list-item">✅ Invia report settimanale</li>
-                        <li class="it-list-item">🔧 Aggiorna progetto X</li>
-                        <li class="it-list-item">📞 Chiama cliente Rossi</li>
-                        <li class="it-list-item">✏️ Firma contratto fornitore</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Statistiche -->
-              <div class="col-12 col-md-6">
-                <div class="it-card-wrapper">
-                  <div class="it-card">
-                    <div class="it-card-body">
-                      <h5 class="it-card-title">Statistiche</h5>
-                      <p class="mb-1">📊 Progetti attivi: <strong>12</strong></p>
-                      <p class="mb-1">✅ Completati questa settimana: <strong>5</strong></p>
-                      <p class="mb-1">⏳ In scadenza: <strong>3</strong></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Note veloci -->
-              <div class="col-12 col-md-6">
-                <div class="it-card-wrapper">
-                  <div class="it-card">
-                    <div class="it-card-body">
-                      <h5 class="it-card-title">Note Veloci</h5>
-                      <textarea class="form-control" rows="3" placeholder="Scrivi un appunto..."></textarea>
-                      <button class="btn btn-primary btn-sm mt-2">Salva Nota</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Scadenze -->
-              <div class="col-12 col-md-6">
-                <div class="it-card-wrapper">
-                  <div class="it-card">
-                    <div class="it-card-body">
-                      <h5 class="it-card-title">Scadenze</h5>
-                      <p><span class="badge badge-danger">Oggi</span> Consegna documenti</p>
-                      <p><span class="badge badge-warning">Domani</span> Pagamento fattura 321</p>
-                      <p><span class="badge badge-info">Lunedì</span> Riunione Marketing</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+    <div class="col-6 col-lg-3">
+      <div class="it-card-wrapper">
+        <div class="it-card it-card-small">
+          <div class="it-card-body text-center">
+            <h5 class="it-card-title">Task Completati</h5>
+            <p class="display-5 fw-bold text-success">87%</p>
+            <small class="text-muted">Questa settimana</small>
           </div>
+        </div>
+      </div>
+    </div>
 
-          <!-- EMAIL -->
-          <div class="tab-pane fade" id="email" role="tabpanel">
-            <div class="it-list-wrapper">
-              <ul class="it-list">
-                <li class="it-list-item">
-                  <a href="#"><strong>Aggiornamento progetto X</strong> <span class="badge badge-secondary">Nuovo</span><br><small>Da: project.manager@azienda.it</small></a>
-                </li>
-                <li class="it-list-item">
-                  <a href="#"><strong>Verbale riunione</strong><br><small>Da: hr@azienda.it</small></a>
-                </li>
-                <li class="it-list-item">
-                  <a href="#"><strong>Offerta commerciale</strong><br><small>Da: commerciale@partner.it</small></a>
-                </li>
-                <li class="it-list-item">
-                  <a href="#"><strong>Reminder scadenza</strong><br><small>Da: amministrazione@azienda.it</small></a>
-                </li>
-              </ul>
-            </div>
+    <div class="col-6 col-lg-3">
+      <div class="it-card-wrapper">
+        <div class="it-card it-card-small">
+          <div class="it-card-body text-center">
+            <h5 class="it-card-title">Documenti</h5>
+            <p class="display-5 fw-bold text-info">34</p>
+            <small class="text-muted">Archiviati</small>
           </div>
+        </div>
+      </div>
+    </div>
 
-          <!-- DOCUMENTI -->
-          <div class="tab-pane fade" id="documenti" role="tabpanel">
-            <div class="it-list-wrapper">
-              <ul class="it-list">
-                <li class="it-list-item">📄 <a href="#">Manuale Operativo.pdf</a> <small class="text-muted">(caricato il 10/09/2025)</small></li>
-                <li class="it-list-item">📑 <a href="#">Regolamento Sicurezza.docx</a> <small class="text-muted">(aggiornato il 01/09/2025)</small></li>
-                <li class="it-list-item">📊 <a href="#">Report Vendite Q3.xlsx</a> <small class="text-muted">(ieri)</small></li>
-                <li class="it-list-item">🧾 <a href="#">Fattura 321.pdf</a> <small class="text-muted">(oggi)</small></li>
-              </ul>
-            </div>
+    <div class="col-6 col-lg-3">
+      <div class="it-card-wrapper">
+        <div class="it-card it-card-small">
+          <div class="it-card-body text-center">
+            <h5 class="it-card-title">Notifiche</h5>
+            <p class="display-5 fw-bold text-warning">5</p>
+            <small class="text-muted">Non lette</small>
           </div>
-
-          <!-- PORTALE -->
-          <div class="tab-pane fade" id="portale" role="tabpanel">
-            <p>Configura il tuo portale:</p>
-            <ul class="it-list">
-              <li class="it-list-item"><a href="#">👤 Gestione profilo</a></li>
-              <li class="it-list-item"><a href="#">🔔 Preferenze notifiche</a></li>
-              <li class="it-list-item"><a href="#">🌙 Tema chiaro/scuro</a></li>
-              <li class="it-list-item"><a href="#">🔒 Sicurezza e password</a></li>
-            </ul>
-          </div>
-
         </div>
       </div>
     </div>
   </div>
+
+  <!-- Contenuti principali -->
+  <div class="row g-4 mt-3">
+    <!-- Colonna sinistra -->
+    <div class="col-12 col-lg-8">
+      
+      <!-- Attività recenti -->
+      <div class="it-card-wrapper mb-4">
+        <div class="it-card">
+          <div class="it-card-header">
+            <h5 class="it-card-title">Attività Recenti</h5>
+          </div>
+          <div class="it-card-body">
+            <div class="it-timeline-wrapper">
+              <div class="it-timeline">
+                <div class="it-timeline-element">
+                  <div class="it-pin-wrapper it-evidence">
+                    <div class="it-pin"></div>
+                  </div>
+                  <div class="it-right-zone">
+                    <span class="it-timeline-date">Oggi</span>
+                    <p class="mb-0">Completata revisione progetto <strong>X</strong></p>
+                  </div>
+                </div>
+                <div class="it-timeline-element">
+                  <div class="it-pin-wrapper">
+                    <div class="it-pin"></div>
+                  </div>
+                  <div class="it-right-zone">
+                    <span class="it-timeline-date">Ieri</span>
+                    <p class="mb-0">Caricato nuovo documento <strong>Regolamento Sicurezza</strong></p>
+                  </div>
+                </div>
+                <div class="it-timeline-element">
+                  <div class="it-pin-wrapper">
+                    <div class="it-pin"></div>
+                  </div>
+                  <div class="it-right-zone">
+                    <span class="it-timeline-date">2 giorni fa</span>
+                    <p class="mb-0">Ricevuta e-mail da <strong>HR</strong></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Documenti -->
+      <div class="it-card-wrapper">
+        <div class="it-card">
+          <div class="it-card-header">
+            <h5 class="it-card-title">Documenti Recenti</h5>
+          </div>
+          <div class="it-card-body">
+            <div class="table-responsive">
+              <table class="table table-sm">
+                <thead>
+                  <tr>
+                    <th>Documento</th>
+                    <th>Data</th>
+                    <th>Stato</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Manuale Operativo.pdf</td>
+                    <td>10/09/2025</td>
+                    <td><span class="badge badge-primary">Pubblicato</span></td>
+                  </tr>
+                  <tr>
+                    <td>Regolamento Sicurezza.docx</td>
+                    <td>01/09/2025</td>
+                    <td><span class="badge badge-warning">In Revisione</span></td>
+                  </tr>
+                  <tr>
+                    <td>Report Vendite Q3.xlsx</td>
+                    <td>09/09/2025</td>
+                    <td><span class="badge badge-success">Confermato</span></td>
+                  </tr>
+                  <tr>
+                    <td>Fattura 321.pdf</td>
+                    <td>12/09/2025</td>
+                    <td><span class="badge badge-danger">In Scadenza</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <button class="btn btn-primary btn-sm mt-2">Vai all'archivio documenti</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Colonna destra -->
+    <div class="col-12 col-lg-4">
+      
+      <!-- Promemoria -->
+      <div class="it-card-wrapper mb-4">
+        <div class="it-card">
+          <div class="it-card-header">
+            <h5 class="it-card-title">Promemoria</h5>
+          </div>
+          <div class="it-card-body">
+            <p><span class="badge badge-danger">Oggi</span> Consegna documenti</p>
+            <p><span class="badge badge-warning">Domani</span> Riunione Marketing</p>
+            <p><span class="badge badge-info">Lunedì</span> Scadenza pagamento fattura</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Note veloci -->
+      <div class="it-card-wrapper">
+        <div class="it-card">
+          <div class="it-card-header">
+            <h5 class="it-card-title">Note Veloci</h5>
+          </div>
+          <div class="it-card-body">
+            <textarea class="form-control mb-2" rows="3" placeholder="Scrivi qui le tue note..."></textarea>
+            <button class="btn btn-outline-primary btn-sm">Salva</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
 </div>
