@@ -2,169 +2,146 @@
 layout: base
 ---
 
-<section class="it-hero-wrapper" aria-label="In evidenza">
-   <div class="img-responsive-wrapper">
-      <div class="img-responsive">
-         <div class="img-wrapper"><img src="https://static.pordenonelegge.it/assets/notizie/2022/angelo-1.jpg" title="" alt="Uffici"></div>
-      </div>
-   </div>
+<section class="it-hero-wrapper it-hero-small-theme" aria-label="Area personale">
+  <div class="it-hero-text-wrapper">
+    <h1 class="it-hero-title">Area personale</h1>
+    <p class="it-hero-subtitle">Benvenuto, <strong>Gabriel Jones</strong></p>
+  </div>
 </section>
 
-<br>
+<div class="container my-4">
+  <!-- Breadcrumb -->
+  <div class="row">
+    <div class="col-12">
+      <nav class="cmp-breadcrumbs" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Area personale</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
 
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-12 col-lg-10">
-      <!-- Breadcrumb -->
-      <div class="cmp-breadcrumbs" role="navigation">
-        <nav class="breadcrumb-container" aria-label="breadcrumb">
-          <ol class="breadcrumb p-0" data-element="breadcrumb">
-            <li class="breadcrumb-item"><a href="/">Home</a><span class="separator">/</span></li>
-            <li class="breadcrumb-item active" aria-current="page">Area personale</li>
-          </ol>
-        </nav>
-      </div>
-
-      <!-- Heading -->
-      <div class="cmp-heading pb-3 pb-lg-4">
-        <h1 class="title-xxxlarge">Gabriel Jones</h1>
-        <p class="subtitle-small">CF: JNSGRL08H11L424Z</p>
+  <!-- Profilo Utente -->
+  <div class="row">
+    <div class="col-12 col-lg-4">
+      <div class="it-card-wrapper">
+        <div class="it-card">
+          <div class="it-card-header">
+            <div class="avatar size-xl">
+              <img src="https://static.pordenonelegge.it/assets/notizie/2022/angelo-1.jpg" alt="Profilo" class="rounded-circle">
+            </div>
+          </div>
+          <div class="it-card-body">
+            <h5 class="card-title mb-0">Gabriel Jones</h5>
+            <p class="card-text">Codice Fiscale: <strong>JNSGRL08H11L424Z</strong></p>
+            <span class="badge badge-primary">Utente Attivo</span>
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- Nav Tabs -->
-    <div class="col-12 p-0">
-      <div class="cmp-nav-tab mb-4 mb-lg-5 mt-lg-4">
-        <ul class="nav nav-tabs nav-tabs-icon-text w-100 flex-nowrap border-0" id="myTab" role="tablist">
-          <li class="nav-item w-100" role="presentation">
-            <a class="nav-link justify-content-start text-tab active" id="tab1-tab"
-               data-bs-toggle="tab" href="#data-ex-tab1" role="tab" aria-controls="data-ex-tab1" aria-selected="true">
-              <svg class="icon me-1 mr-lg-10" aria-hidden="true">
-                <use href="/media/sprites.svg#it-pa"></use>
-              </svg>
+    <!-- Nav Tab -->
+    <div class="col-12 col-lg-8">
+      <div class="cmp-nav-tab">
+        <ul class="nav nav-tabs nav-tabs-icon-text" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" data-bs-toggle="tab" href="#scrivania" role="tab">
+              <svg class="icon icon-sm"><use href="/media/sprites.svg#it-pa"></use></svg>
               Scrivania
             </a>
           </li>
-          <li class="nav-item w-100" role="presentation">
-            <a class="nav-link justify-content-start text-tab" id="tab2-tab"
-               data-bs-toggle="tab" href="#data-ex-tab2" role="tab" aria-controls="data-ex-tab2" aria-selected="false">
-              <svg class="icon me-1 mr-lg-10" aria-hidden="true">
-                <use href="/media/sprites.svg#it-mail"></use>
-              </svg>
-              E-Mail in evidenza
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#email" role="tab">
+              <svg class="icon icon-sm"><use href="/media/sprites.svg#it-mail"></use></svg>
+              E-Mail
             </a>
           </li>
-          <li class="nav-item w-100" role="presentation">
-            <a class="nav-link justify-content-start text-tab" id="tab3-tab"
-               data-bs-toggle="tab" href="#data-ex-tab3" role="tab" aria-controls="data-ex-tab3" aria-selected="false">
-              <svg class="icon me-1 mr-lg-10" aria-hidden="true">
-                <use href="/media/sprites.svg#it-files"></use>
-              </svg>
-              Documenti Interni
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#documenti" role="tab">
+              <svg class="icon icon-sm"><use href="/media/sprites.svg#it-files"></use></svg>
+              Documenti
             </a>
           </li>
-          <li class="nav-item w-100" role="presentation">
-            <a class="nav-link justify-content-start text-tab" id="tab4-tab"
-               data-bs-toggle="tab" href="#data-ex-tab4" role="tab" aria-controls="data-ex-tab4" aria-selected="false">
-              <svg class="icon me-1 mr-lg-10" aria-hidden="true">
-                <use href="/media/sprites.svg#it-settings"></use>
-              </svg>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#portale" role="tab">
+              <svg class="icon icon-sm"><use href="/media/sprites.svg#it-settings"></use></svg>
               Portale
             </a>
           </li>
         </ul>
-      </div>
-    </div>
 
-    <!-- Tab Content -->
-    <div class="col-12">
-      <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active custom-tab p-4" id="data-ex-tab1" role="tabpanel" aria-labelledby="tab1-tab">
-          <h2 class="tab-title">Scrivania</h2>
-          <p class="tab-text">Qui puoi gestire le tue attività principali e accedere alle funzioni rapide.</p>
-{% raw %}
-{% assign docs = site.docs | sort: 'date' | reverse %}
-{% for doc in docs limit:5 %}
-<div class="accordion-item">
-  <div class="accordion-header" id="heading-{{ forloop.index }}">
-    <button class="accordion-button title-snall-semi-bold collapsed" type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#collapse-{{ forloop.index }}"
-      aria-expanded="false"
-      aria-controls="collapse-{{ forloop.index }}"
-      data-focus-mouse="false">
-      <div class="button-wrapper">
-        {{ doc.title }}
-        <div class="icon-wrapper">
-          <img class="icon-folder" src="{{ '/assets/images/folder-concluded.svg' | relative_url }}" alt="folder Conclusa" role="img">
-          <span class="">{{ doc.status | default: "Conclusa" }}</span>
-        </div>
-      </div>
-    </button>
-    <p class="accordion-date title-xsmall-regular mb-0">{{ doc.date | date: "%d/%m/%Y" }}</p>
-  </div>
+        <!-- Tab Content -->
+        <div class="tab-content mt-3">
+          
+          <!-- Scrivania -->
+          <div class="tab-pane fade show active" id="scrivania" role="tabpanel">
+            <div class="row g-3">
+              <div class="col-12 col-md-6">
+                <div class="it-card-wrapper">
+                  <div class="it-card">
+                    <div class="it-card-body">
+                      <h5 class="it-card-title">Task del giorno</h5>
+                      <ul class="it-list">
+                        <li class="it-list-item">📑 Invia report settimanale</li>
+                        <li class="it-list-item">🔧 Aggiorna stato progetto X</li>
+                        <li class="it-list-item">📞 Contatta fornitore</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="it-card-wrapper">
+                  <div class="it-card">
+                    <div class="it-card-body">
+                      <h5 class="it-card-title">Promemoria</h5>
+                      <p><span class="badge badge-info">Oggi</span> Riunione ore 14:30</p>
+                      <p><span class="badge badge-warning">Domani</span> Scadenza pagamento fattura</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-  <div id="collapse-{{ forloop.index }}" class="accordion-collapse p-0 collapse"
-    data-bs-parent="#accordionExampleDocs"
-    role="region"
-    aria-labelledby="heading-{{ forloop.index }}">
-    <div class="accordion-body">
-      {% if doc.pratica %}
-        <p class="mb-2 fw-normal">Pratica: <span class="label">{{ doc.pratica }}</span></p>
-      {% endif %}
+          <!-- E-Mail -->
+          <div class="tab-pane fade" id="email" role="tabpanel">
+            <div class="it-list-wrapper">
+              <ul class="it-list">
+                <li class="it-list-item">
+                  <a href="#">Aggiornamento progetto X <span class="badge badge-secondary">Nuova</span></a>
+                </li>
+                <li class="it-list-item">
+                  <a href="#">Nuove policy HR</a>
+                </li>
+                <li class="it-list-item">
+                  <a href="#">Verbale riunione marketing</a>
+                </li>
+              </ul>
+            </div>
+          </div>
 
-      {% if doc.scheda_url %}
-        <a href="{{ doc.scheda_url }}" class="mb-2">
-          <span class="t-primary">Scheda servizio</span>
-        </a>
-      {% endif %}
+          <!-- Documenti -->
+          <div class="tab-pane fade" id="documenti" role="tabpanel">
+            <div class="it-list-wrapper">
+              <ul class="it-list">
+                <li class="it-list-item"><a href="#">📄 Manuale Operativo.pdf</a></li>
+                <li class="it-list-item"><a href="#">📑 Regolamento Sicurezza.docx</a></li>
+                <li class="it-list-item"><a href="#">📊 Report Vendite Q3.xlsx</a></li>
+              </ul>
+            </div>
+          </div>
 
-      {% if doc.tags %}
-        {% for tag in doc.tags %}
-          <a class="chip chip-simple" href="{{ '/docs/tags/' | append: tag | relative_url }}">
-            <span class="chip-label">{{ tag }}</span>
-          </a>
-        {% endfor %}
-      {% endif %}
+          <!-- Portale -->
+          <div class="tab-pane fade" id="portale" role="tabpanel">
+            <p class="mb-3">Accedi alle impostazioni del portale e personalizza la tua esperienza.</p>
+            <button class="btn btn-primary btn-sm">
+              <svg class="icon icon-sm"><use href="/media/sprites.svg#it-settings"></use></svg>
+              Apri impostazioni
+            </button>
+          </div>
 
-      {% if doc.links %}
-      <div class="cmp-icon-list">
-        <div class="link-list-wrapper">
-          <ul class="link-list">
-            {% for link in doc.links %}
-            <li class="shadow p-0">
-              <a class="list-item icon-left t-primary title-small-semi-bold" href="{{ link.url }}" aria-label="{{ link.label }}">
-                <span class="list-item-title-icon-wrapper">
-                  <svg class="icon icon-sm align-self-start icon-color" aria-hidden="true">
-                    <use href="{{ '/assets/bootstrap-italia/dist/svg/sprites.svg#it-clip' | relative_url }}"></use>
-                  </svg>
-                  <span class="list-item-title title-small-semi-bold">{{ link.label }}</span>
-                </span>
-              </a>
-            </li>
-            {% endfor %}
-          </ul>
-        </div>
-      </div>
-      {% endif %}
-    </div>
-  </div>
-</div>
-{% endfor %}
-{% endraw %}
-
-        </div>
-        <div class="tab-pane fade custom-tab p-4" id="data-ex-tab2" role="tabpanel" aria-labelledby="tab2-tab">
-          <h2 class="tab-title">Articoli</h2>
-          <p class="tab-text">Visualizza qui le email più importanti o segnalate.</p>
-        </div>
-        <div class="tab-pane fade custom-tab p-4" id="data-ex-tab3" role="tabpanel" aria-labelledby="tab3-tab">
-          <h2 class="tab-title">Documenti Interni</h2>
-          <p class="tab-text">Trova tutti i documenti interni associati al tuo profilo.</p>
-        </div>
-        <div class="tab-pane fade custom-tab p-4" id="data-ex-tab4" role="tabpanel" aria-labelledby="tab4-tab">
-          <h2 class="tab-title">Portale</h2>
-          <p class="tab-text">Accedi alle sezioni avanzate e alle impostazioni del portale.</p>
         </div>
       </div>
     </div>
