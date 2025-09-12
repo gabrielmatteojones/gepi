@@ -1,0 +1,68 @@
+---
+layout: default
+title: News
+permalink: /news/
+---
+
+<!-- Includiamo Bootstrap Italia -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-italia@1.2.1/dist/css/bootstrap-italia.min.css">
+
+<div class="container my-5">
+
+  <!-- Primo post grande -->
+  {% assign first_post = site.posts.first %}
+  {% if first_post %}
+  <div class="row mb-5">
+    <div class="col-12">
+      <div class="card">
+        {% if first_post.image %}
+        <img src="{{ first_post.image }}" class="card-img-top" alt="{{ first_post.title }}">
+        {% endif %}
+        <div class="card-body">
+          <h2 class="card-title">{{ first_post.title }}</h2>
+          <p class="card-text">{{ first_post.excerpt | strip_html | truncatewords: 50 }}</p>
+          <a href="{{ first_post.url }}" class="btn btn-primary">Leggi di più</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+  <!-- Griglia di post (3 colonne, 4 righe) -->
+  <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+    {% assign posts_grid = site.posts | offset:1 | limit:12 %}
+    {% for post in posts_grid %}
+    <div class="col">
+      <div class="card h-100">
+        {% if post.image %}
+        <img src="{{ post.image }}" class="card-img-top" alt="{{ post.title }}">
+        {% endif %}
+        <div class="card-body">
+          <h5 class="card-title">{{ post.title }}</h5>
+          <p class="card-text">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
+          <a href="{{ post.url }}" class="btn btn-secondary btn-sm">Leggi</a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <!-- Categorie -->
+  <div class="row">
+    <div class="col-12">
+      <h3>Categorie</h3>
+      <ul class="list-group list-group-flush">
+        {% assign categories_list = site.categories | sort %}
+        {% for category in categories_list %}
+        <li class="list-group-item">
+          <a href="{{ site.baseurl }}/categories/{{ category[0] | slugify }}/">{{ category[0] }} ({{ category[1].size }})</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+<!-- Bootstrap Italia JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-italia@1.2.1/dist/js/bootstrap-italia.bundle.min.js"></script>
