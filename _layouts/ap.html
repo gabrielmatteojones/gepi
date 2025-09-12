@@ -1,58 +1,46 @@
 ---
 layout: base
 ---
----
-layout: base
----
 
 <div class="container">
   <h1 class="mb-5 text-center">🗂️ Area Personale</h1>
 
-  <!-- Nav schede -->
-  <ul class="nav nav-pills mb-4 justify-content-center" id="myTab" role="tablist">
-    <li class="nav-item" role="presentation">
-      <button class="nav-link active" id="documenti-tab" data-bs-toggle="tab" data-bs-target="#documenti" type="button">Documenti</button>
-    </li>
-    <li class="nav-item" role="presentation">
-      <button class="nav-link" id="link-tab" data-bs-toggle="tab" data-bs-target="#link" type="button">Link</button>
-    </li>
-    <li class="nav-item" role="presentation">
-      <button class="nav-link" id="scuola-tab" data-bs-toggle="tab" data-bs-target="#scuola" type="button">Scuola</button>
-    </li>
-    <li class="nav-item" role="presentation">
-      <button class="nav-link" id="lavoro-tab" data-bs-toggle="tab" data-bs-target="#lavoro" type="button">Lavoro</button>
-    </li>
-    <li class="nav-item" role="presentation">
-      <button class="nav-link" id="calcio-tab" data-bs-toggle="tab" data-bs-target="#calcio" type="button">Fontanafredda Calcio</button>
-    </li>
-    <li class="nav-item" role="presentation">
-      <button class="nav-link text-danger" id="porno-tab" data-bs-toggle="tab" data-bs-target="#porno" type="button">Sezione Protetta</button>
-    </li>
-  </ul>
+  <!-- Nav a pulsanti -->
+  <div class="d-flex justify-content-center mb-4 flex-wrap gap-2">
+    <button class="btn btn-gradient btn-lg" data-tab="documenti">📄 Documenti</button>
+    <button class="btn btn-gradient btn-lg" data-tab="link">🔗 Link</button>
+    <button class="btn btn-gradient btn-lg" data-tab="scuola">🎓 Scuola</button>
+    <button class="btn btn-gradient btn-lg" data-tab="lavoro">💼 Lavoro</button>
+    <button class="btn btn-gradient btn-lg" data-tab="calcio">⚽ Fontanafredda Calcio</button>
+    <button class="btn btn-danger btn-lg" data-tab="porno">🔞 Sezione Protetta</button>
+  </div>
 
   <!-- Contenuto schede -->
-  <div class="tab-content">
-
+  <div id="tab-content">
     <!-- DOCUMENTI -->
-    <div class="tab-pane fade show active" id="documenti">
-      <div class="row g-4 mt-3">
+    <div class="tab-pane active" id="documenti">
+      <div class="row g-4">
         <div class="col-md-4">
-          <div class="card shadow-sm hover-card border-primary">
+          <div class="card custom-card bg-gradient-blue text-white">
             <div class="card-body">
-              <h5 class="card-title"><i class="bi bi-file-earmark-text"></i> Documento 1</h5>
-              <p class="card-text">Report importante del progetto X.</p>
-              <span class="badge bg-primary">Urgente</span>
-              <a href="#" class="btn btn-outline-primary btn-sm mt-2">Apri</a>
+              <h3>📄 Report Progetto X</h3>
+              <p>Stato: <span class="badge bg-warning text-dark">In corso</span></p>
+              <div class="progress mb-2">
+                <div class="progress-bar bg-light" role="progressbar" style="width: 45%"></div>
+              </div>
+              <a href="#" class="btn btn-light btn-sm">Apri</a>
             </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card shadow-sm hover-card border-success">
+          <div class="card custom-card bg-gradient-green text-white">
             <div class="card-body">
-              <h5 class="card-title"><i class="bi bi-file-earmark-text"></i> Documento 2</h5>
-              <p class="card-text">Appunti vari o note interne.</p>
-              <span class="badge bg-success">Normale</span>
-              <a href="#" class="btn btn-outline-success btn-sm mt-2">Apri</a>
+              <h3>📄 Appunti Vari</h3>
+              <p>Categoria: Note personali</p>
+              <div class="progress mb-2">
+                <div class="progress-bar bg-light" role="progressbar" style="width: 80%"></div>
+              </div>
+              <a href="#" class="btn btn-light btn-sm">Apri</a>
             </div>
           </div>
         </div>
@@ -60,23 +48,23 @@ layout: base
     </div>
 
     <!-- LINK -->
-    <div class="tab-pane fade" id="link">
-      <div class="row g-4 mt-3">
+    <div class="tab-pane" id="link">
+      <div class="row g-4">
         <div class="col-md-4">
-          <div class="card shadow-sm hover-card border-info">
+          <div class="card custom-card bg-gradient-purple text-white">
             <div class="card-body">
-              <h5 class="card-title"><i class="bi bi-link-45deg"></i> Link 1</h5>
-              <p class="card-text">Sito utile per lavoro o studio.</p>
-              <a href="#" class="btn btn-outline-info btn-sm mt-2">Visita</a>
+              <h3>🔗 Risorsa Lavoro</h3>
+              <p>Tipologia: Tutorial</p>
+              <a href="#" class="btn btn-light btn-sm">Vai</a>
             </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card shadow-sm hover-card border-warning">
+          <div class="card custom-card bg-gradient-orange text-white">
             <div class="card-body">
-              <h5 class="card-title"><i class="bi bi-link-45deg"></i> Link 2</h5>
-              <p class="card-text">Risorsa interessante da salvare.</p>
-              <a href="#" class="btn btn-outline-warning btn-sm mt-2">Visita</a>
+              <h3>🔗 Risorsa Studio</h3>
+              <p>Categoria: Appunti online</p>
+              <a href="#" class="btn btn-light btn-sm">Vai</a>
             </div>
           </div>
         </div>
@@ -84,23 +72,23 @@ layout: base
     </div>
 
     <!-- SCUOLA -->
-    <div class="tab-pane fade" id="scuola">
-      <div class="row g-4 mt-3">
+    <div class="tab-pane" id="scuola">
+      <div class="row g-4">
         <div class="col-md-4">
-          <div class="card shadow-sm hover-card border-secondary">
+          <div class="card custom-card bg-gradient-red text-white">
             <div class="card-body">
-              <h5 class="card-title"><i class="bi bi-journal-text"></i> Compito 1</h5>
-              <p class="card-text">Scadenza: 15 settembre</p>
-              <span class="badge bg-secondary">Importante</span>
+              <h3>🎓 Compito 1</h3>
+              <p>Scadenza: 15/09</p>
+              <span class="badge bg-light text-dark">Urgente</span>
             </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card shadow-sm hover-card border-secondary">
+          <div class="card custom-card bg-gradient-yellow text-dark">
             <div class="card-body">
-              <h5 class="card-title"><i class="bi bi-journal-text"></i> Lezione 2</h5>
-              <p class="card-text">Appunti e materiali della lezione.</p>
-              <span class="badge bg-secondary">Info</span>
+              <h3>🎓 Lezione 2</h3>
+              <p>Argomento: Matematica</p>
+              <span class="badge bg-dark">Nota</span>
             </div>
           </div>
         </div>
@@ -108,23 +96,23 @@ layout: base
     </div>
 
     <!-- LAVORO -->
-    <div class="tab-pane fade" id="lavoro">
-      <div class="row g-4 mt-3">
+    <div class="tab-pane" id="lavoro">
+      <div class="row g-4">
         <div class="col-md-4">
-          <div class="card shadow-sm hover-card border-dark">
+          <div class="card custom-card bg-gradient-teal text-white">
             <div class="card-body">
-              <h5 class="card-title"><i class="bi bi-briefcase"></i> Progetto A</h5>
-              <p class="card-text">Task da completare entro fine mese.</p>
-              <span class="badge bg-dark">Alta Priorità</span>
+              <h3>💼 Progetto A</h3>
+              <p>Deadline: 30/09</p>
+              <span class="badge bg-warning text-dark">Alta Priorità</span>
             </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card shadow-sm hover-card border-dark">
+          <div class="card custom-card bg-gradient-pink text-white">
             <div class="card-body">
-              <h5 class="card-title"><i class="bi bi-briefcase"></i> Scadenza B</h5>
-              <p class="card-text">Reminder meeting e report.</p>
-              <span class="badge bg-dark">Urgente</span>
+              <h3>💼 Scadenza B</h3>
+              <p>Note meeting</p>
+              <span class="badge bg-light text-dark">Reminder</span>
             </div>
           </div>
         </div>
@@ -132,23 +120,23 @@ layout: base
     </div>
 
     <!-- CALCIO -->
-    <div class="tab-pane fade" id="calcio">
-      <div class="row g-4 mt-3">
+    <div class="tab-pane" id="calcio">
+      <div class="row g-4">
         <div class="col-md-4">
-          <div class="card shadow-sm hover-card border-danger">
+          <div class="card custom-card bg-gradient-cyan text-white">
             <div class="card-body">
-              <h5 class="card-title"><i class="bi bi-trophy"></i> Partita 1</h5>
-              <p class="card-text">Risultati e note sulla partita.</p>
-              <span class="badge bg-danger">Vittoria</span>
+              <h3>⚽ Partita 1</h3>
+              <p>Risultato: Vittoria</p>
+              <span class="badge bg-light text-dark">Top</span>
             </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card shadow-sm hover-card border-danger">
+          <div class="card custom-card bg-gradient-indigo text-white">
             <div class="card-body">
-              <h5 class="card-title"><i class="bi bi-clock"></i> Allenamento</h5>
-              <p class="card-text">Orario e note allenamento settimanale.</p>
-              <span class="badge bg-danger">Importante</span>
+              <h3>⚽ Allenamento</h3>
+              <p>Orario: 18:00</p>
+              <span class="badge bg-light text-dark">Obbligatorio</span>
             </div>
           </div>
         </div>
@@ -156,22 +144,53 @@ layout: base
     </div>
 
     <!-- PORNO / SEZIONE PROTETTA -->
-    <div class="tab-pane fade" id="porno">
-      <div class="alert alert-warning mt-3" role="alert">
-        ⚠️ Sezione protetta. Abilita Basic Auth su Netlify per accedere.
+    <div class="tab-pane" id="porno">
+      <div class="alert alert-danger mt-3" role="alert">
+        🔞 Sezione protetta. Abilita Basic Auth su Netlify per accedere.
       </div>
     </div>
-
   </div>
 </div>
 
-<!-- Bootstrap Italia + Bootstrap Icons -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+<!-- Bootstrap Italia -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap-italia/dist/js/bootstrap-italia.bundle.min.js"></script>
 
 <style>
-.hover-card:hover {
-  transform: translateY(-5px);
-  transition: 0.3s;
+/* Gradient backgrounds */
+.bg-gradient-blue { background: linear-gradient(135deg, #4a90e2, #357ab8); }
+.bg-gradient-green { background: linear-gradient(135deg, #2ecc71, #27ae60); }
+.bg-gradient-purple { background: linear-gradient(135deg, #9b59b6, #8e44ad); }
+.bg-gradient-orange { background: linear-gradient(135deg, #e67e22, #d35400); }
+.bg-gradient-red { background: linear-gradient(135deg, #e74c3c, #c0392b); }
+.bg-gradient-yellow { background: linear-gradient(135deg, #f1c40f, #f39c12); }
+.bg-gradient-teal { background: linear-gradient(135deg, #1abc9c, #16a085); }
+.bg-gradient-pink { background: linear-gradient(135deg, #ff6b6b, #c0392b); }
+.bg-gradient-cyan { background: linear-gradient(135deg, #00bcd4, #0097a7); }
+.bg-gradient-indigo { background: linear-gradient(135deg, #3f51b5, #303f9f); }
+
+/* Card hover effect */
+.custom-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 1rem;
 }
+.custom-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* Tab switch JS */
+.tab-pane { display: none; }
+.tab-pane.active { display: block; }
 </style>
+
+<script>
+const tabs = document.querySelectorAll('.btn[data-tab]');
+const panes = document.querySelectorAll('.tab-pane');
+
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    panes.forEach(p => p.classList.remove('active'));
+    document.getElementById(tab.dataset.tab).classList.add('active');
+  });
+});
+</script>
