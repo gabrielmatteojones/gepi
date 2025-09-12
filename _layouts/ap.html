@@ -2,118 +2,54 @@
 layout: base
 ---
 
-<section class="it-page-section mb-40 mb-lg-60" id="documenti">
-  <div class="cmp-filter d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-4">
-    <h2 class="cmp-filter__title title-xxlarge">Documenti Gestionali</h2>
-    <div class="d-flex align-items-center gap-3 mt-2 mt-md-0">
-      <button type="button" class="btn btn-outline-primary d-flex align-items-center gap-1">
-        <svg class="icon icon-sm" aria-hidden="true">
-          <use href="/media/sprites.svg#it-funnel"></use>
-        </svg>
-        Filtra
-      </button>
-      <div class="dropdown">
-        <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownSort" data-bs-toggle="dropdown" aria-expanded="false">
-          Ordina
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownSort">
-          <li><a class="dropdown-item" href="#">Data più recente</a></li>
-          <li><a class="dropdown-item" href="#">Nome documento</a></li>
-          <li><a class="dropdown-item" href="#">Tipo documento</a></li>
+  <div class="container">
+    <h1 class="mb-4">Area Personale</h1>
+
+    <!-- Nav schede -->
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="documenti-tab" data-bs-toggle="tab" data-bs-target="#documenti" type="button" role="tab" aria-controls="documenti" aria-selected="true">Documenti</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="link-tab" data-bs-toggle="tab" data-bs-target="#link" type="button" role="tab" aria-controls="link" aria-selected="false">Link</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="scuola-tab" data-bs-toggle="tab" data-bs-target="#scuola" type="button" role="tab" aria-controls="scuola" aria-selected="false">Scuola</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="lavoro-tab" data-bs-toggle="tab" data-bs-target="#lavoro" type="button" role="tab" aria-controls="lavoro" aria-selected="false">Lavoro</button>
+      </li>
+    </ul>
+
+    <!-- Contenuto schede -->
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="documenti" role="tabpanel" aria-labelledby="documenti-tab">
+        <p>Qui puoi inserire i tuoi documenti pubblici o note personali.</p>
+        <ul>
+          <li>Documento 1</li>
+          <li>Documento 2</li>
         </ul>
       </div>
-      <div class="input-group ms-2">
-        <input type="search" class="form-control" placeholder="Cerca documento..." aria-label="Cerca documento">
-        <span class="input-group-text"><svg class="icon icon-sm"><use href="/media/sprites.svg#it-search"></use></svg></span>
+      <div class="tab-pane fade" id="link" role="tabpanel" aria-labelledby="link-tab">
+        <p>Salva qui i tuoi link: normali, preferiti o altro.</p>
+        <ul>
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+        </ul>
+      </div>
+      <div class="tab-pane fade" id="scuola" role="tabpanel" aria-labelledby="scuola-tab">
+        <p>Materiali, note o impegni scolastici.</p>
+        <ul>
+          <li>Compito 1</li>
+          <li>Lezione 2</li>
+        </ul>
+      </div>
+      <div class="tab-pane fade" id="lavoro" role="tabpanel" aria-labelledby="lavoro-tab">
+        <p>Task, documenti e note di lavoro.</p>
+        <ul>
+          <li>Progetto A</li>
+          <li>Scadenza B</li>
+        </ul>
       </div>
     </div>
   </div>
-
-  <div class="cmp-accordion">
-    <div class="accordion" id="accordionDocumenti">
-
-      <!-- Documento esempio 1 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="docHeading1">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#docCollapse1" aria-expanded="false" aria-controls="docCollapse1">
-            Contratto Collaborazione - Stato: <span class="badge bg-warning ms-2">In Revisione</span>
-          </button>
-        </h2>
-        <div id="docCollapse1" class="accordion-collapse collapse" aria-labelledby="docHeading1" data-bs-parent="#accordionDocumenti">
-          <div class="accordion-body">
-            <p><strong>ID Documento:</strong> DOC-001-2025</p>
-            <p><strong>Tipo:</strong> Contratto</p>
-            <a href="#" class="btn btn-sm btn-outline-primary mb-2">Visualizza Dettagli</a>
-            <div class="d-flex gap-2 flex-wrap">
-              <a href="#" class="btn btn-sm btn-primary">Scarica Allegato</a>
-              <a href="#" class="btn btn-sm btn-secondary">Carica Revisione</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Documento esempio 2 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="docHeading2">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#docCollapse2" aria-expanded="false" aria-controls="docCollapse2">
-            Richiesta Rimborso - Stato: <span class="badge bg-success ms-2">Approvato</span>
-          </button>
-        </h2>
-        <div id="docCollapse2" class="accordion-collapse collapse" aria-labelledby="docHeading2" data-bs-parent="#accordionDocumenti">
-          <div class="accordion-body">
-            <p><strong>ID Documento:</strong> DOC-002-2025</p>
-            <p><strong>Tipo:</strong> Rimborso Spese</p>
-            <a href="#" class="btn btn-sm btn-outline-primary mb-2">Visualizza Dettagli</a>
-            <div class="d-flex gap-2 flex-wrap">
-              <a href="#" class="btn btn-sm btn-primary">Scarica Allegato</a>
-              <a href="#" class="btn btn-sm btn-secondary">Stampa Ricevuta</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Documento esempio 3 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="docHeading3">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#docCollapse3" aria-expanded="false" aria-controls="docCollapse3">
-            Report Vendite Q3 - Stato: <span class="badge bg-info ms-2">Da Revisionare</span>
-          </button>
-        </h2>
-        <div id="docCollapse3" class="accordion-collapse collapse" aria-labelledby="docHeading3" data-bs-parent="#accordionDocumenti">
-          <div class="accordion-body">
-            <p><strong>ID Documento:</strong> DOC-003-2025</p>
-            <p><strong>Tipo:</strong> Report</p>
-            <a href="#" class="btn btn-sm btn-outline-primary mb-2">Visualizza Dettagli</a>
-            <div class="d-flex gap-2 flex-wrap">
-              <a href="#" class="btn btn-sm btn-primary">Scarica PDF</a>
-              <a href="#" class="btn btn-sm btn-secondary">Carica Versione Aggiornata</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Documento esempio 4 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="docHeading4">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#docCollapse4" aria-expanded="false" aria-controls="docCollapse4">
-            Permesso ZTL - Stato: <span class="badge bg-success ms-2">Concluso</span>
-          </button>
-        </h2>
-        <div id="docCollapse4" class="accordion-collapse collapse" aria-labelledby="docHeading4" data-bs-parent="#accordionDocumenti">
-          <div class="accordion-body">
-            <p><strong>ID Documento:</strong> DOC-004-2025</p>
-            <p><strong>Tipo:</strong> Permesso</p>
-            <a href="#" class="btn btn-sm btn-outline-primary mb-2">Visualizza Dettagli</a>
-            <div class="d-flex gap-2 flex-wrap">
-              <a href="#" class="btn btn-sm btn-primary">Scarica Permesso</a>
-              <a href="#" class="btn btn-sm btn-secondary">Stampa Documento</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <button type="button" class="btn btn-link mt-3">Vedi altri documenti</button>
-  </div>
-</section>
