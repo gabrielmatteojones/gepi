@@ -2,54 +2,156 @@
 layout: base
 ---
 
-  <div class="container">
-    <h1 class="mb-4">Area Personale</h1>
+<div class="container">
+  <h1 class="mb-4">Area Personale</h1>
 
-    <!-- Nav schede -->
-    <ul class="nav nav-tabs" id="myTab" role="tablist">
-      <li class="nav-item" role="presentation">
-        <button class="nav-link active" id="documenti-tab" data-bs-toggle="tab" data-bs-target="#documenti" type="button" role="tab" aria-controls="documenti" aria-selected="true">Documenti</button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" id="link-tab" data-bs-toggle="tab" data-bs-target="#link" type="button" role="tab" aria-controls="link" aria-selected="false">Link</button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" id="scuola-tab" data-bs-toggle="tab" data-bs-target="#scuola" type="button" role="tab" aria-controls="scuola" aria-selected="false">Scuola</button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" id="lavoro-tab" data-bs-toggle="tab" data-bs-target="#lavoro" type="button" role="tab" aria-controls="lavoro" aria-selected="false">Lavoro</button>
-      </li>
-    </ul>
+  <!-- Nav schede -->
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="documenti-tab" data-bs-toggle="tab" data-bs-target="#documenti" type="button" role="tab" aria-controls="documenti" aria-selected="true">Documenti</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="link-tab" data-bs-toggle="tab" data-bs-target="#link" type="button" role="tab" aria-controls="link" aria-selected="false">Link</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="scuola-tab" data-bs-toggle="tab" data-bs-target="#scuola" type="button" role="tab" aria-controls="scuola" aria-selected="false">Scuola</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="lavoro-tab" data-bs-toggle="tab" data-bs-target="#lavoro" type="button" role="tab" aria-controls="lavoro" aria-selected="false">Lavoro</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="calcio-tab" data-bs-toggle="tab" data-bs-target="#calcio" type="button" role="tab" aria-controls="calcio" aria-selected="false">Fontanafredda Calcio</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="porno-tab" data-bs-toggle="tab" data-bs-target="#porno" type="button" role="tab" aria-controls="porno" aria-selected="false">Sezione Protetta</button>
+    </li>
+  </ul>
 
-    <!-- Contenuto schede -->
-    <div class="tab-content" id="myTabContent">
-      <div class="tab-pane fade show active" id="documenti" role="tabpanel" aria-labelledby="documenti-tab">
-        <p>Qui puoi inserire i tuoi documenti pubblici o note personali.</p>
-        <ul>
-          <li>Documento 1</li>
-          <li>Documento 2</li>
-        </ul>
-      </div>
-      <div class="tab-pane fade" id="link" role="tabpanel" aria-labelledby="link-tab">
-        <p>Salva qui i tuoi link: normali, preferiti o altro.</p>
-        <ul>
-          <li><a href="#">Link 1</a></li>
-          <li><a href="#">Link 2</a></li>
-        </ul>
-      </div>
-      <div class="tab-pane fade" id="scuola" role="tabpanel" aria-labelledby="scuola-tab">
-        <p>Materiali, note o impegni scolastici.</p>
-        <ul>
-          <li>Compito 1</li>
-          <li>Lezione 2</li>
-        </ul>
-      </div>
-      <div class="tab-pane fade" id="lavoro" role="tabpanel" aria-labelledby="lavoro-tab">
-        <p>Task, documenti e note di lavoro.</p>
-        <ul>
-          <li>Progetto A</li>
-          <li>Scadenza B</li>
-        </ul>
+  <!-- Contenuto schede -->
+  <div class="tab-content" id="myTabContent">
+
+    <!-- DOCUMENTI -->
+    <div class="tab-pane fade show active" id="documenti" role="tabpanel" aria-labelledby="documenti-tab">
+      <div class="row mt-3">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Documento 1</h5>
+              <p class="card-text">Descrizione breve del documento 1.</p>
+              <a href="#" class="btn btn-primary btn-sm">Apri</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Documento 2</h5>
+              <p class="card-text">Descrizione breve del documento 2.</p>
+              <a href="#" class="btn btn-primary btn-sm">Apri</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
+    <!-- LINK -->
+    <div class="tab-pane fade" id="link" role="tabpanel" aria-labelledby="link-tab">
+      <div class="row mt-3">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Link 1</h5>
+              <p class="card-text">Descrizione o categoria del link 1.</p>
+              <a href="#" class="btn btn-primary btn-sm">Vai</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Link 2</h5>
+              <p class="card-text">Descrizione o categoria del link 2.</p>
+              <a href="#" class="btn btn-primary btn-sm">Vai</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCUOLA -->
+    <div class="tab-pane fade" id="scuola" role="tabpanel" aria-labelledby="scuola-tab">
+      <div class="row mt-3">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Compito 1</h5>
+              <p class="card-text">Dettagli o scadenze per il compito 1.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Lezione 2</h5>
+              <p class="card-text">Note della lezione 2 o materiali.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LAVORO -->
+    <div class="tab-pane fade" id="lavoro" role="tabpanel" aria-labelledby="lavoro-tab">
+      <div class="row mt-3">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Progetto A</h5>
+              <p class="card-text">Descrizione e stato del progetto A.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Scadenza B</h5>
+              <p class="card-text">Task o reminder per Scadenza B.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CALCIO -->
+    <div class="tab-pane fade" id="calcio" role="tabpanel" aria-labelledby="calcio-tab">
+      <div class="row mt-3">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Partita 1</h5>
+              <p class="card-text">Risultati e note sulla partita 1.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Allenamento</h5>
+              <p class="card-text">Orari e note dell'allenamento.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PORNO / SEZIONE PROTETTA -->
+    <div class="tab-pane fade" id="porno" role="tabpanel" aria-labelledby="porno-tab">
+      <div class="alert alert-warning mt-3" role="alert">
+        ⚠️ Sezione protetta. Abilita Basic Auth su Netlify per accedere.
+      </div>
+    </div>
+
   </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-italia/dist/js/bootstrap-italia.bundle.min.js"></script>
