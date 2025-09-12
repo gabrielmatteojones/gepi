@@ -95,62 +95,25 @@
       </div>
     </div>
 
+<!-- HEADER STICKY -->
 <header class="sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
 
-
-
-<div class="it-header-slim-wrapper" data-bs-toggle="sticky">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-    <div class="it-header-navbar-wrapper">
-      <div class="container-xxl">
-        <div class="row">
-          <div class="col-12">
-            <!--start nav-->
-            <nav class="navbar navbar-expand-lg has-megamenu" aria-label="Navigazione principale">
-              <button class="custom-navbar-toggler" type="button" aria-controls="navC2" aria-label="Mostra/Nascondi la navigazione" data-bs-toggle="navbarcollapsible" data-bs-target="#navC2">
-                <svg class="icon"><use href="/media/sprites.svg#it-burger"></use></svg>
-              </button>
-              <div class="navbar-collapsable" id="navC2" tabindex="-1">
-                <div class="close-div">
-                  <button class="btn close-menu" type="button">
-                    <span class="visually-hidden">Nascondi la navigazione</span>
-                    <svg class="icon"><use href="/media/sprites.svg#it-close-big"></use></svg>
-                  </button>
-                </div>
-                <div class="menu-wrapper">
-                  <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="/"><span>Home</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="/org/"><span>Organizzazione</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="/amministrazione/"><span>Amministrazione</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="/news/"><span>News</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="/progetti/"><span>progetti</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="/servizi/"><span>Servizi</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="/obiettivi2035/"><span>Obiettivi 2035</span></a></li>
-                  </ul>
-                </div>
-              </div>
-            </nav>
-          </div>
-        </div>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/servizi/">Servizi</a></li>
+          <li class="nav-item"><a class="nav-link" href="/org/">Organizzazione</a></li>
+          <li class="nav-item"><a class="nav-link" href="/news/">News</a></li>
+          <li class="nav-item"><a class="nav-link" href="/obiettivi2035/">Organizzazione</a></li>
+        </ul>
       </div>
     </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
+  </nav>
 </header>
 
-
-  </div>
-</header>
-
-{{ content }}
+<!-- STILE PERSONALIZZATO -->
 <style>
   header {
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
@@ -173,6 +136,13 @@
     }
   });
 </script>
+
+
+  </div>
+</header>
+
+{{ content }}
+
 
 </body>
 </html>
