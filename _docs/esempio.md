@@ -10,4 +10,5 @@ links:
     url: "/docs/ricevuta.pdf"
   - label: "Graduatoria"
     url: "/docs/graduatoria.pdf"
+layout: base
 ---
