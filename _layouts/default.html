@@ -5,7 +5,32 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="/assets/bootstrap-italia/dist/js/bootstrap-italia.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
 
+  /* file: assets/css/print.css */
+@media print {
+  /* Nascondi header, footer, sidebar e componenti extra */
+  header, footer, nav, .sidebar, .ads, .btn, .menu { 
+    display: none !important; 
+  }
+
+  /* Mantieni solo contenuto principale */
+  main {
+    width: 100%;
+    font-size: 12pt;
+    color: black;
+  }
+
+  /* Mostra intestazione semplificata */
+  .print-header {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+  
+</style>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -187,6 +212,16 @@
     </div>
   </div>
 
+
+
+  <div class="print-header" style="display:none;">
+  <img src="https://gabrieljones.it/assets/logo.png" alt="Logo sito" height="50">
+  <h1>{{ page.title }}</h1>
+  <p>{{ page.author }} - {{ page.date | date: "%d %B %Y" }}</p>
+</div>
+
+
+  
   {{ content }}
 
   <footer class="it-footer">
