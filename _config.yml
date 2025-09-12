@@ -18,7 +18,7 @@ baseurl: "/"
 collections:
   posts:
     output: true
-    permalink: /posts/:author/:title/
+    permalink: /posts/:title/
 
 # Versione Jekyll
 version: v4.0.0
