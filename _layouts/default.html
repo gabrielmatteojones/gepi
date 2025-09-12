@@ -6,6 +6,43 @@
 <script src="/assets/bootstrap-italia/dist/js/bootstrap-italia.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Titolo -->
+  <title>{{ page.title }} | {{ site.title }}</title>
+  
+  <!-- Meta descrizione -->
+  {% if page.description %}
+    <meta name="description" content="{{ page.description }}">
+  {% endif %}
+
+  <!-- Meta keywords -->
+  {% if page.keywords %}
+    <meta name="keywords" content="{{ page.keywords }}">
+  {% endif %}
+
+  <!-- Autore -->
+  {% if page.author %}
+    <meta name="author" content="{{ page.author }}">
+  {% endif %}
+
+  <!-- Immagine per social / SEO -->
+  {% if page.image %}
+    <meta property="og:image" content="{{ page.image }}">
+    <meta name="twitter:image" content="{{ page.image }}">
+  {% endif %}
+
+  <!-- Titolo Open Graph -->
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:description" content="{{ page.description }}">
+  <meta property="og:type" content="article">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page.title }}">
+  <meta name="twitter:description" content="{{ page.description }}">
+
 <style>
   /*!
  * Bootstrap Italia  (https://italia.github.io/bootstrap-italia/)
