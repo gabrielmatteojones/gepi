@@ -35,7 +35,7 @@ layout: base
     <!-- Nav Tabs -->
     <div class="col-12 p-0">
       <div class="cmp-nav-tab mb-4 mb-lg-5 mt-lg-4">
-        <ul class="nav nav-tabs nav-tabs-icon-text w-100 flex-nowrap" id="myTab" role="tablist">
+        <ul class="nav nav-tabs nav-tabs-icon-text w-100 flex-nowrap border-0" id="myTab" role="tablist">
           <li class="nav-item w-100" role="presentation">
             <a class="nav-link justify-content-start text-tab active" id="tab1-tab"
                data-bs-toggle="tab" href="#data-ex-tab1" role="tab" aria-controls="data-ex-tab1" aria-selected="true">
@@ -79,23 +79,73 @@ layout: base
     <!-- Tab Content -->
     <div class="col-12">
       <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active p-3 border rounded" id="data-ex-tab1" role="tabpanel" aria-labelledby="tab1-tab">
-          <h2>Scrivania</h2>
-          <p>Qui puoi gestire le tue attività principali e accedere alle funzioni rapide.</p>
+        <div class="tab-pane fade show active custom-tab p-4" id="data-ex-tab1" role="tabpanel" aria-labelledby="tab1-tab">
+          <h2 class="tab-title">Scrivania</h2>
+          <p class="tab-text">Qui puoi gestire le tue attività principali e accedere alle funzioni rapide.</p>
         </div>
-        <div class="tab-pane fade p-3 border rounded" id="data-ex-tab2" role="tabpanel" aria-labelledby="tab2-tab">
-          <h2>E-Mail in evidenza</h2>
-          <p>Visualizza qui le email più importanti o segnalate.</p>
+        <div class="tab-pane fade custom-tab p-4" id="data-ex-tab2" role="tabpanel" aria-labelledby="tab2-tab">
+          <h2 class="tab-title">E-Mail in evidenza</h2>
+          <p class="tab-text">Visualizza qui le email più importanti o segnalate.</p>
         </div>
-        <div class="tab-pane fade p-3 border rounded" id="data-ex-tab3" role="tabpanel" aria-labelledby="tab3-tab">
-          <h2>Documenti Interni</h2>
-          <p>Trova tutti i documenti interni associati al tuo profilo.</p>
+        <div class="tab-pane fade custom-tab p-4" id="data-ex-tab3" role="tabpanel" aria-labelledby="tab3-tab">
+          <h2 class="tab-title">Documenti Interni</h2>
+          <p class="tab-text">Trova tutti i documenti interni associati al tuo profilo.</p>
         </div>
-        <div class="tab-pane fade p-3 border rounded" id="data-ex-tab4" role="tabpanel" aria-labelledby="tab4-tab">
-          <h2>Portale</h2>
-          <p>Accedi alle sezioni avanzate e alle impostazioni del portale.</p>
+        <div class="tab-pane fade custom-tab p-4" id="data-ex-tab4" role="tabpanel" aria-labelledby="tab4-tab">
+          <h2 class="tab-title">Portale</h2>
+          <p class="tab-text">Accedi alle sezioni avanzate e alle impostazioni del portale.</p>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+<style>
+  /* Rimuovo i bordi delle tab */
+  .nav-tabs {
+    border-bottom: none;
+  }
+
+  /* Miglioro il look dei pulsanti */
+  .nav-tabs .nav-link {
+    border: none;
+    background: transparent;
+    font-weight: 500;
+    padding: 0.75rem 1rem;
+    border-radius: 0.75rem;
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+
+  .nav-tabs .nav-link.active {
+    background: #f3f6fa;
+    color: #0d6efd;
+    font-weight: 600;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  }
+
+  /* Design schede */
+  .custom-tab {
+    background: #fdfdfd;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    margin-bottom: 1rem;
+    animation: fadeIn 0.3s ease;
+  }
+
+  .tab-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  .tab-text {
+    font-size: 1rem;
+    color: #555;
+  }
+
+  /* Piccola animazione per il contenuto */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>
