@@ -1,5 +1,5 @@
 ---
-title: Pordenone Legge
+title: Tutto sulla 26ª edizione di Pordenone Legge
 date: 2025-09-12T12:14:00.000+02:00
 tags:
   - festival
