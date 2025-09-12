@@ -4,16 +4,7 @@ title: "Il testamento di Giorgio Armani: alla Fondazione il 100% della società,
 layout: post
 date: 2025-09-12T22:23:00.000+02:00
 tags:
-  - Charlie Kirk
-  - Turning Point USA
-  - Donald Trump
-  - FBI
-  - assassinio
-  - Utah Valley University
-  - violenza politica
-  - influencer conservatore
-  - politica USA
-  - sicurezza
+  - ...
 categories:
   - gossip
 description: Giorgio Armani lascia il 100% della società alla Fondazione Armani.
@@ -61,7 +52,3 @@ Il manager Michele Morselli e sua figlia Bianca riceveranno BTP e una polizza de
 La Fondazione, istituita nel 2016 e aggiornata nel 2023, garantirà la **continuità del marchio** e la salvaguardia dell’indipendenza della maison. La governance è studiata per evitare conflitti e assicurare stabilità, con decisioni strategiche come fusioni e scissioni soggette a **quorum del 75%**.
 
 L’eredità di Giorgio Armani non è solo economica, ma anche culturale: il suo stile, la visione e la coerenza creativa continueranno a guidare la maison e saranno celebrati durante la **Milano Fashion Week Women’s Collection 2025** e la mostra all’Accademia di Brera in occasione del 50° anniversario del marchio.
-
-### Form compilato per il blog
-
-**Tags:** Giorgio Armani, testamento Armani, Fondazione Armani, Pantaleo Dell’Orco, LVMH, EssilorLuxottica, L’Oréal, moda italiana, fashion business, successione aziendale
