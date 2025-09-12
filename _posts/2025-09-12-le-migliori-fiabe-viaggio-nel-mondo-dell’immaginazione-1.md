@@ -11,10 +11,7 @@ tags:
   - fratelli Grimm
   - Hans Christian Andersen
 categories:
-  - Letteratura per bambini
-  - Cultura
   - Educazione
-  - Intrattenimento
 description: "Scopri le fiabe più amate di tutti i tempi: storie classiche come
   Cenerentola, Biancaneve e La Sirenetta che insegnano valori universali
   attraverso magia e avventura."
