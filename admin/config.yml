@@ -14,6 +14,7 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"  # formato slug per gli articoli
     fields:
       - { label: "Titolo", name: "title", widget: "string" }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }  # campo layout
       - { label: "Data", name: "date", widget: "datetime" }
       - { label: "Tags", name: "tags", widget: "list" }
       - { label: "Categorie", name: "categories", widget: "list" }
@@ -37,6 +38,7 @@ collections:
       - { label: "Keywords", name: "keywords", widget: "string" }
       - { label: "Immagine", name: "image", widget: "image" }
       - { label: "Ref", name: "ref", widget: "string" }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }  # campo layout
       - { label: "Autore", name: "author", widget: "string" }
       - { label: "Lingua", name: "lang", widget: "string" }
       - { label: "Contenuto", name: "body", widget: "markdown" }
