@@ -33,6 +33,7 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
+      - { label: "Permalink", name: "permalink", widget: "string", required: false, hint: "Inserisci un URL personalizzato, es: /blog/mio-articolo" }
       - { label: "Titolo", name: "title", widget: "string" }
       - { label: "Descrizione", name: "description", widget: "string" }
       - { label: "Keywords", name: "keywords", widget: "string" }
@@ -41,15 +42,3 @@ collections:
       - { label: "Layout", name: "layout", widget: "hidden", default: "page" }
       - { label: "Autore", name: "author", widget: "string" }
       - { label: "Lingua", name: "lang", widget: "string" }
-
-  # COLLEZIONE BLOG
-  - name: "blog"
-    label: "Blog"
-    folder: "content/blog"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "Titolo", name: "title", widget: "string" }
-      - { label: "Permalink", name: "permalink", widget: "string", required: false, hint: "Inserisci un URL personalizzato, es: /blog/mio-articolo" }
-      - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Contenuto", name: "content", widget: "markdown" }
