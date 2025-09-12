@@ -19,6 +19,10 @@ collections:
   posts:
     output: true
     permalink: /posts/:categories/:title/
+  docs:
+    output: true
+    permalink: /docs/:name/
+
 
 # Versione Jekyll
 version: v4.0.0
