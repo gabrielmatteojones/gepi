@@ -27,11 +27,11 @@ collections:
       - { label: "Contenuto", name: "body", widget: "markdown" }
 
   # COLLEZIONE PAGINE
-  - name: "pagine"
-    label: "Pagine"
-    folder: "_pages"
-    create: true
-    slug: "{{slug}}"
+  - name:     "pagine"
+    label:    "Pagine"
+    folder:   "_pages"
+    create:   true
+    slug:     "{{slug}}"
     fields:
       - { label: "Titolo", name: "title", widget: "string" }
       - { label: "Descrizione", name: "description", widget: "string" }
@@ -41,3 +41,4 @@ collections:
       - { label: "Layout", name: "layout", widget: "hidden", default: "page" }
       - { label: "Autore", name: "author", widget: "hidden", default: "gabriel" }
       - { label: "Lingua", name: "lang", widget: "string" }
+      - { label: "Contenuto", name: "body", widget: "markdown" }
