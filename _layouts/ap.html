@@ -2,131 +2,118 @@
 layout: base
 ---
 
-<section class="it-hero-wrapper it-hero-small-size it-hero-small-theme bg-light">
-  <div class="it-hero-text-wrapper">
-    <h1 class="it-hero-title">Area Personale</h1>
-    <p class="it-hero-subtitle">Bentornato, <strong>Gabriel Jones</strong> 👋</p>
+<section class="it-page-section mb-40 mb-lg-60" id="documenti">
+  <div class="cmp-filter d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-4">
+    <h2 class="cmp-filter__title title-xxlarge">Documenti Gestionali</h2>
+    <div class="d-flex align-items-center gap-3 mt-2 mt-md-0">
+      <button type="button" class="btn btn-outline-primary d-flex align-items-center gap-1">
+        <svg class="icon icon-sm" aria-hidden="true">
+          <use href="/media/sprites.svg#it-funnel"></use>
+        </svg>
+        Filtra
+      </button>
+      <div class="dropdown">
+        <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownSort" data-bs-toggle="dropdown" aria-expanded="false">
+          Ordina
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownSort">
+          <li><a class="dropdown-item" href="#">Data più recente</a></li>
+          <li><a class="dropdown-item" href="#">Nome documento</a></li>
+          <li><a class="dropdown-item" href="#">Tipo documento</a></li>
+        </ul>
+      </div>
+      <div class="input-group ms-2">
+        <input type="search" class="form-control" placeholder="Cerca documento..." aria-label="Cerca documento">
+        <span class="input-group-text"><svg class="icon icon-sm"><use href="/media/sprites.svg#it-search"></use></svg></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="cmp-accordion">
+    <div class="accordion" id="accordionDocumenti">
+
+      <!-- Documento esempio 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="docHeading1">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#docCollapse1" aria-expanded="false" aria-controls="docCollapse1">
+            Contratto Collaborazione - Stato: <span class="badge bg-warning ms-2">In Revisione</span>
+          </button>
+        </h2>
+        <div id="docCollapse1" class="accordion-collapse collapse" aria-labelledby="docHeading1" data-bs-parent="#accordionDocumenti">
+          <div class="accordion-body">
+            <p><strong>ID Documento:</strong> DOC-001-2025</p>
+            <p><strong>Tipo:</strong> Contratto</p>
+            <a href="#" class="btn btn-sm btn-outline-primary mb-2">Visualizza Dettagli</a>
+            <div class="d-flex gap-2 flex-wrap">
+              <a href="#" class="btn btn-sm btn-primary">Scarica Allegato</a>
+              <a href="#" class="btn btn-sm btn-secondary">Carica Revisione</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Documento esempio 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="docHeading2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#docCollapse2" aria-expanded="false" aria-controls="docCollapse2">
+            Richiesta Rimborso - Stato: <span class="badge bg-success ms-2">Approvato</span>
+          </button>
+        </h2>
+        <div id="docCollapse2" class="accordion-collapse collapse" aria-labelledby="docHeading2" data-bs-parent="#accordionDocumenti">
+          <div class="accordion-body">
+            <p><strong>ID Documento:</strong> DOC-002-2025</p>
+            <p><strong>Tipo:</strong> Rimborso Spese</p>
+            <a href="#" class="btn btn-sm btn-outline-primary mb-2">Visualizza Dettagli</a>
+            <div class="d-flex gap-2 flex-wrap">
+              <a href="#" class="btn btn-sm btn-primary">Scarica Allegato</a>
+              <a href="#" class="btn btn-sm btn-secondary">Stampa Ricevuta</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Documento esempio 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="docHeading3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#docCollapse3" aria-expanded="false" aria-controls="docCollapse3">
+            Report Vendite Q3 - Stato: <span class="badge bg-info ms-2">Da Revisionare</span>
+          </button>
+        </h2>
+        <div id="docCollapse3" class="accordion-collapse collapse" aria-labelledby="docHeading3" data-bs-parent="#accordionDocumenti">
+          <div class="accordion-body">
+            <p><strong>ID Documento:</strong> DOC-003-2025</p>
+            <p><strong>Tipo:</strong> Report</p>
+            <a href="#" class="btn btn-sm btn-outline-primary mb-2">Visualizza Dettagli</a>
+            <div class="d-flex gap-2 flex-wrap">
+              <a href="#" class="btn btn-sm btn-primary">Scarica PDF</a>
+              <a href="#" class="btn btn-sm btn-secondary">Carica Versione Aggiornata</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Documento esempio 4 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="docHeading4">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#docCollapse4" aria-expanded="false" aria-controls="docCollapse4">
+            Permesso ZTL - Stato: <span class="badge bg-success ms-2">Concluso</span>
+          </button>
+        </h2>
+        <div id="docCollapse4" class="accordion-collapse collapse" aria-labelledby="docHeading4" data-bs-parent="#accordionDocumenti">
+          <div class="accordion-body">
+            <p><strong>ID Documento:</strong> DOC-004-2025</p>
+            <p><strong>Tipo:</strong> Permesso</p>
+            <a href="#" class="btn btn-sm btn-outline-primary mb-2">Visualizza Dettagli</a>
+            <div class="d-flex gap-2 flex-wrap">
+              <a href="#" class="btn btn-sm btn-primary">Scarica Permesso</a>
+              <a href="#" class="btn btn-sm btn-secondary">Stampa Documento</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <button type="button" class="btn btn-link mt-3">Vedi altri documenti</button>
   </div>
 </section>
-
-<div class="container my-4">
-
-  <!-- Breadcrumb -->
-  <nav class="cmp-breadcrumbs mb-3" aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="/">Home</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Area personale</li>
-    </ol>
-  </nav>
-
-  <div class="row">
-    <!-- Profilo -->
-    <div class="col-12 col-lg-4 mb-4">
-      <div class="it-card-wrapper">
-        <div class="it-card">
-          <div class="it-card-header d-flex align-items-center">
-            <div class="avatar size-xl me-3">
-              <img src="https://static.pordenonelegge.it/assets/notizie/2022/angelo-1.jpg" alt="Profilo" class="rounded-circle">
-            </div>
-            <div>
-              <h5 class="mb-0">Gabriel Jones</h5>
-              <small class="text-muted">Utente Attivo</small>
-            </div>
-          </div>
-          <div class="it-card-body">
-            <p>Codice Fiscale: <strong>JNSGRL08H11L424Z</strong></p>
-            <span class="badge badge-success">Online</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Schede -->
-    <div class="col-12 col-lg-8">
-      <ul class="nav nav-tabs nav-tabs-icon-text" role="tablist">
-        <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#scrivania" role="tab">Scrivania</a></li>
-        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#email" role="tab">E-Mail</a></li>
-        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#documenti" role="tab">Documenti</a></li>
-        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#portale" role="tab">Portale</a></li>
-      </ul>
-
-      <div class="tab-content mt-3">
-        <!-- Scrivania -->
-        <div class="tab-pane fade show active" id="scrivania" role="tabpanel">
-          <div class="row g-3">
-            <div class="col-12">
-              <div class="it-card-wrapper">
-                <div class="it-card">
-                  <div class="it-card-body">
-                    <h5 class="it-card-title">Task e Note</h5>
-                    <ul class="it-list">
-                      <li class="it-list-item">✅ Invia report settimanale</li>
-                      <li class="it-list-item">✏️ Scrivi note rapide</li>
-                      <li class="it-list-item">📞 Chiamare cliente</li>
-                    </ul>
-                    <textarea class="form-control mt-2" rows="3" placeholder="Scrivi qui una nota veloce..."></textarea>
-                    <button class="btn btn-primary btn-sm mt-2">Salva Nota</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- E-Mail -->
-        <div class="tab-pane fade" id="email" role="tabpanel">
-          <div class="it-card-wrapper">
-            <div class="it-card">
-              <div class="it-card-body">
-                <h5 class="it-card-title">Link E-Mail</h5>
-                <ul class="it-list">
-                  <li class="it-list-item"><a href="#">Inbox principale</a></li>
-                  <li class="it-list-item"><a href="#">Progetti</a></li>
-                  <li class="it-list-item"><a href="#">HR e amministrazione</a></li>
-                  <li class="it-list-item"><a href="#">Promozioni e notifiche</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Documenti -->
-        <div class="tab-pane fade" id="documenti" role="tabpanel">
-          <div class="it-card-wrapper">
-            <div class="it-card">
-              <div class="it-card-body">
-                <h5 class="it-card-title">Documenti Salvati</h5>
-                <ul class="it-list">
-                  <li class="it-list-item"><a href="#">Manuale Operativo.pdf</a> <small class="text-muted">(10/09/2025)</small></li>
-                  <li class="it-list-item"><a href="#">Regolamento Sicurezza.docx</a> <small class="text-muted">(01/09/2025)</small></li>
-                  <li class="it-list-item"><a href="#">Report Vendite Q3.xlsx</a> <small class="text-muted">(09/09/2025)</small></li>
-                  <li class="it-list-item"><a href="#">Fattura 321.pdf</a> <small class="text-muted">(12/09/2025)</small></li>
-                </ul>
-                <button class="btn btn-primary btn-sm mt-2">Carica Nuovo Documento</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Portale -->
-        <div class="tab-pane fade" id="portale" role="tabpanel">
-          <div class="it-card-wrapper">
-            <div class="it-card">
-              <div class="it-card-body">
-                <h5 class="it-card-title">Impostazioni Portale</h5>
-                <ul class="it-list">
-                  <li class="it-list-item"><a href="#">👤 Gestione profilo</a></li>
-                  <li class="it-list-item"><a href="#">🔔 Notifiche</a></li>
-                  <li class="it-list-item"><a href="#">🔒 Sicurezza e password</a></li>
-                  <li class="it-list-item"><a href="#">🌙 Tema chiaro/scuro</a></li>
-                </ul>
-                <button class="btn btn-secondary btn-sm mt-2">Apri Portale</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</div>
