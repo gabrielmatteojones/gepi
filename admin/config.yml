@@ -21,16 +21,3 @@ collections:
       - label: Contenuto
         name: body
         widget: markdown
-
-  - name: pagine
-    label: Pagine
-    folder: _pages
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - label: Titolo
-        name: title
-        widget: string
-      - label: Contenuto
-        name: body
-        widget: markdown
