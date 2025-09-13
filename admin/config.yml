@@ -30,15 +30,15 @@ collections:
   - name:     "pagine"
     label:    "Pagine"
     folder:   "_pages"
-    create:   true
     slug:     "{{slug}}"
+    create:   true
     fields:
       - { label: "Titolo", name: "title", widget: "string" }
-      - { label: "Descrizione", name: "description", widget: "string" }
-      - { label: "Keywords", name: "keywords", widget: "string" }
-      - { label: "Immagine", name: "image", required: false, widget: "image" }
+      - { label: "Descrizione", name: "description", required: false, widget: "string" }
+      - { label: "Keywords", name: "keywords", required: false, widget: "string" }
+      - { label: "Immagine", name: "image", required: false, required: false, widget: "image" }
       - { label: "Permalink", name: "permalink", widget: "string", required: false, hint: "Inserisci un URL personalizzato, es: /blog/mio-articolo" }
       - { label: "Layout", name: "layout", widget: "hidden", default: "page" }
       - { label: "Autore", name: "author", widget: "hidden", default: "gabriel" }
-      - { label: "Lingua", name: "lang", widget: "string" }
+      - { label: "Lingua", name: "lang", required: false, widget: "string" }
       - { label: "Contenuto", name: "body", widget: "markdown" }
