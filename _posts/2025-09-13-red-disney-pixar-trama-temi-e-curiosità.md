@@ -19,7 +19,7 @@ keywords: red disney pixar, red film 2022, red disney trama, film red disney,
   rosso, disney red colonna sonora, film disney coming of age
 image: https://www.pointblank.it/sites/default/files/styles/slide/public/2022-03/Turning%20Red%20-%20Pixar%20Disney%20recensione%20film.jpg?itok=XpooJ5sn
 ref: reddisney
-author: manuel
+author: mrizzo
 lang: it
 ---
 # Red (Disney Pixar): Trama, Temi e Curiosità
