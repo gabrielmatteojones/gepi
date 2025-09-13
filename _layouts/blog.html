@@ -2,15 +2,15 @@
 layout: base
 ---
 
+
 <style>
 /* Contenitore principale centrato */
-.text-center {
-    text-align: center;       /* centra il testo */
-    display: block;           /* assicura che sia un blocco */
-    margin-left: auto;        /* opzionale: utile per alcuni elementi */
-    margin-right: auto;       /* opzionale: utile per alcuni elementi */
+.header-wrapper-center {
+  display: flex;             /* attiva Flexbox */
+  justify-content: center;   /* centra orizzontalmente */
+  align-items: center;       /* centra verticalmente se vuoi altezza fissa */
+  flex-direction: column;    /* elementi in colonna */
 }
-
 
 /* Solo testo e link inline */
 .header-wrapper-center .navbar-nav,
@@ -24,6 +24,8 @@ layout: base
   transform: translateX(-50%);
 }
 </style>
+
+
 <br>
 <div  class="header-wrapper-center rounded-3">
 <div class="it-header-navbar-wrapper">
