@@ -29,7 +29,7 @@ collections:
   # COLLEZIONE PAGINE
   - name:     "pagine"
     label:    "Pagine"
-    folder:   "_pages"
+    folder:   "it"
     slug:     "{{slug}}"
     create:   true
     fields:
