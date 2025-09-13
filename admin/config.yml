@@ -42,3 +42,19 @@ collections:
       - { label: "Autore", name: "author", widget: "hidden", default: "gabriel" }
       - { label: "Lingua", name: "lang", required: false, widget: "string" }
       - { label: "Contenuto", name: "body", widget: "markdown" }
+
+
+  # COLLEZIONE PAGINE
+  - name:     "distretto"
+    label:    "Distretto"
+    folder:   "it"
+    slug:     "{{slug}}"
+    create:   true
+    fields:
+      - { label: "Titolo", name: "title", widget: "string" }
+      - { label: "Descrizione", name: "description", required: false, widget: "string" }
+      - { label: "Keywords", name: "keywords", required: false, widget: "string" }
+      - { label: "Permalink", name: "permalink", widget: "string" }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "distretto" }
+      - { label: "Autore", name: "author", widget: "hidden", default: "gabriel" }
+      - { label: "Contenuto", name: "body", widget: "markdown" }
