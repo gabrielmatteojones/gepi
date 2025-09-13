@@ -36,9 +36,9 @@ layout: base
                 <li class="nav-item w-100" role="tab" aria-selected="false" tabindex="-1">
                   <a class="nav-link justify-content-start text-tab" href="#data-ex-tab2" aria-current="page" aria-controls="tab2" aria-selected="false" data-bs-toggle="tab" role="button" data-focus-mouse="false" tabindex="-1">
                     <svg class="icon me-1 mr-lg-10" aria-hidden="true">
-                      <use href="/media/sprites.svg#it-mail"></use>
+                      <use href="/media/sprites.svg#it-folder"></use>
                     </svg>
-                    Messaggi
+                    Cartelle
                   </a>
                 </li>
                 <li class="nav-item w-100" role="tab" aria-selected="false" tabindex="-1">
@@ -46,7 +46,7 @@ layout: base
                     <svg class="icon me-1 mr-lg-10" aria-hidden="true">
                       <use href="/media/sprites.svg#it-files"></use>
                     </svg>
-                    Attività
+                    Documenti
                   </a>
                 </li>
                 <li class="nav-item w-100" role="tab" aria-selected="false" tabindex="-1">
@@ -84,7 +84,6 @@ layout: base
         <div class="card-body p-0">
 
 <section class="container my-5">
-  <h2 class="mb-4">Ultimi Articoli</h2>
   <div class="row">
     {% for post in site.posts limit:3 %}
       <div class="col-12 col-md-4 mb-4">
@@ -126,14 +125,101 @@ layout: base
               </div>
             </div>
             <div class="tab-pane" id="data-ex-tab2" role="tabpanel">
-                <h1>Ultimi Avvisi</h1>
-                        <div class="alert alert-danger" role="alert">
-                          <h4 class="alert-heading">Avviso di successo!</h4>
-                          <p>Stai leggendo questo importante messaggio di avviso di successo. Questo testo di esempio sarà più lungo in modo da poter vedere come funzioni la spaziatura all'interno di un avviso con questo tipo di contenuto.</p>
-                          <hr>
-                          <p class="mb-0">Quando necessario, assicurarti di inserire le utilità di margine per mantenere gli spazi equilibrati.</p>
-                        </div>
-                    <script type="text/javascript" src="https://www.protezionecivile.fvg.it/widgets/pcrfvgit_alert.js"></script><div class="pcrfvgit_alert_widget" data-istatcode="93033"></div>
+
+                    <main class="container my-4">
+  <style>
+    .square {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--bs-light);
+      aspect-ratio: 1/1;
+      border-radius: .4rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      transition: background-color .2s, transform .2s;
+      padding: .5rem;
+    }
+    .square:hover {
+      background-color: var(--bs-gray-200);
+      transform: translateY(-2px);
+    }
+    .square svg {
+      width: 82px;
+      height: 82px;
+      fill: var(--bs-primary);
+      margin-bottom: .3rem;
+    }
+    .square h4 {
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-align: center;
+      color: var(--bs-dark);
+      line-height: 1.1;
+    }
+  </style><div class="row g-3">
+    <!-- 20 quadrati generati manualmente -->
+    <!-- Uso col-6 (2 per riga su mobile), col-sm-4 (3 per riga su small), col-md-2 (5 per riga su desktop) -->
+    <!-- Ogni quadrato con icona SVG e testo -->
+    <!-- Puoi cambiare i nomi come vuoi -->
+    
+    <!-- Generazione manuale -->
+    <!-- Nota: uso <svg><use href="/media/sprites.svg#it-folder"></use></svg> -->
+    
+    <!-- CARTELLE 1-20 -->
+    <!-- Puoi sostituire "Cartella N" con i nomi reali -->
+    <!-- Le colonne sono più strette per avere quadrati più piccoli -->
+    
+    <!-- ripetiamo 20 volte -->
+    <!-- Usa snippet per non scrivere a mano -->
+    <!-- Qui li scrivo tutti -->
+    <!-- 1 -->
+    <div class="col-6 col-sm-4 col-md-2">
+      <div class="square">
+        <svg class="icon"><use href="/media/sprites.svg#it-folder"></use></svg>
+        <h4>Archivio</h4>
+      </div>
+    </div>
+    <!-- 2 -->
+    <div class="col-6 col-sm-4 col-md-2">
+      <div class="square">
+        <svg class="icon"><use href="/media/sprites.svg#it-folder"></use></svg>
+        <h4>Distretto Educativo</h4>
+      </div>
+    </div>
+    <!-- 3 -->
+    <div class="col-6 col-sm-4 col-md-2">
+      <div class="square">
+        <svg class="icon"><use href="/media/sprites.svg#it-folder"></use></svg>
+        <h4>Distretto GJWS</h4>
+      </div>
+    </div>
+    <!-- 4 -->
+    <div class="col-6 col-sm-4 col-md-2">
+      <div class="square">
+        <svg class="icon"><use href="/media/sprites.svg#it-folder"></use></svg>
+        <h4>Distretto Stampa</h4>
+      </div>
+    </div>
+    <!-- 5 -->
+    <div class="col-6 col-sm-4 col-md-2">
+      <div class="square">
+        <svg class="icon"><use href="/media/sprites.svg#it-folder"></use></svg>
+        <h4>Direttivo</h4>
+      </div>
+    </div>
+    <!-- 6 -->
+    <div class="col-6 col-sm-4 col-md-2">
+      <div class="square">
+        <svg class="icon"><use href="/media/sprites.svg#it-folder"></use></svg>
+        <h4>Sezione Protetta</h4>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+
             </div>
             <div class="tab-pane" id="data-ex-tab3" role="tabpanel">
               <div class="row">
