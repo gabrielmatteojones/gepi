@@ -303,5 +303,13 @@ layout: default
     footer {
       display: none; /* Nasconde le immagini con classe img-responsive in stampa */
     }
+    @page {
+      margin: 10mm; /* puoi cambiare da 5mm a 10mm */
+    }
+
+    /* Eventuale ulteriore adattamento del body */
+    body {
+      margin: 0; /* evita margini extra fuori da @page */
+    }
   }
 </style>
