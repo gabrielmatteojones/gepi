@@ -3,14 +3,27 @@ layout: base
 ---
 
 <style>
-  .text-center {
-    text-align: center;       /* centra il testo */
-    display: block;           /* assicura che sia un blocco */
-    margin-left: auto;        /* opzionale: utile per alcuni elementi */
-    margin-right: auto;       /* opzionale: utile per alcuni elementi */
+/* Contenitore principale centrato */
+.header-wrapper-center {
+  display: flex;             /* attiva Flexbox */
+  justify-content: center;   /* centra orizzontalmente */
+  align-items: center;       /* centra verticalmente se vuoi altezza fissa */
+  flex-direction: column;    /* elementi in colonna */
 }
 
+/* Solo testo e link inline */
+.header-wrapper-center .navbar-nav,
+.header-wrapper-center .navbar-nav .nav-item {
+  text-align: center;
+}
+
+/* Opzionale: centra anche i dropdown */
+.header-wrapper-center .dropdown-menu {
+  left: 50%;
+  transform: translateX(-50%);
+}
 </style>
+
 <div  class="text-center">
 <div class="it-header-navbar-wrapper theme-light-desk">
   <div class="container-xxl">
