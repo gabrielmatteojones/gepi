@@ -285,14 +285,17 @@ layout: default
   </div>
 </footer>
 
-<style>
 
-    @media print {
+<style>
+  @media print {
     header {
       display: none; /* Nasconde l'header in stampa */
     }
-    img-responsive {
-      display: none; /* Nasconde l'header in stampa */
+    .img-responsive {
+      display: none; /* Nasconde le immagini con classe img-responsive in stampa */
+    }
+    footer {
+      display: none; /* Nasconde le immagini con classe img-responsive in stampa */
     }
   }
 </style>
