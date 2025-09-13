@@ -286,30 +286,33 @@ layout: default
 </footer>
 
 
+
+
+
+
+
+
+
 <style>
   @media print {
-    header {
-      display: none; /* Nasconde l'header in stampa */
-    }
-    .it-hero-wrapper {
-      display: none; /* Nasconde le immagini con classe img-responsive in stampa */
-    }
-    .it-overlay {
-      display: none; /* Nasconde le immagini con classe img-responsive in stampa */
-    }
-    .it-bottom-overlapping-content {
-      display: none; /* Nasconde le immagini con classe img-responsive in stampa */
-    }
+    /* Nasconde header, footer e elementi vari */
+    header,
+    .it-hero-wrapper,
+    .it-overlay,
+    .it-bottom-overlapping-content,
     footer {
-      display: none; /* Nasconde le immagini con classe img-responsive in stampa */
-    }
-    @page {
-      margin: 10mm; /* puoi cambiare da 5mm a 10mm */
+      display: none;
     }
 
-    /* Eventuale ulteriore adattamento del body */
+    /* Margini di stampa */
+    @page {
+      margin: 10mm; /* laterali e inferiori */
+    }
+
+    /* Padding interno al body per margine superiore affidabile */
     body {
-      margin: 0; /* evita margini extra fuori da @page */
+      margin: 0;        /* rimuove margini default del browser */
+      padding-top: 10mm; /* margine superiore reale */
     }
   }
 </style>
