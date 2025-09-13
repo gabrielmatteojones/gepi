@@ -292,10 +292,9 @@ layout: default
 
 
 
-
 <style>
   @media print {
-    /* Nasconde header, footer e elementi vari */
+    /* Nasconde header, footer e altri elementi */
     header,
     .it-hero-wrapper,
     .it-overlay,
@@ -304,15 +303,20 @@ layout: default
       display: none;
     }
 
-    /* Margini di stampa */
+    /* Margini di stampa generali */
     @page {
-      margin: 10mm; /* laterali e inferiori */
+      margin: 10mm; /* per tutte le pagine di default */
     }
 
-    /* Padding interno al body per margine superiore affidabile */
+    /* Prima pagina senza margine superiore */
+    @page :first {
+      margin-top: 0;
+    }
+
+    /* Padding interno per garantire margini laterali e inferiori */
     body {
-      margin: 0;        /* rimuove margini default del browser */
-      padding-top: 10mm; /* margine superiore reale */
+      margin: 0;
+      padding: 0;
     }
   }
 </style>
