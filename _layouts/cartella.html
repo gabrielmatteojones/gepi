@@ -6,14 +6,15 @@ layout: base
   <div class="it-row justify-content-center">
 
     {% for link in page.links %}
-    <div class="col-6 col-md-6 mb-4"> <!-- Due per riga, 6 per colonna -->
+    <div class="col-6 col-md-6 mb-4"> <!-- Due per riga -->
       <div class="it-card it-card-body text-center border-0">
         <a href="{{ link.url }}" class="d-block text-decoration-none">
-          <!-- Icona tramite Sprite SVG di Bootstrap Italia -->
-          <svg class="it-icon it-icon-lg mb-3">
+          <!-- Icona Rossa tramite Sprite SVG di Bootstrap Italia -->
+          <svg class="it-icon it-icon-lg mb-3" style="fill: red;">
             <use xlink:href="/media/sprite.svg#it-file"></use>
           </svg>
-          <h5 class="it-card-title mb-2">{{ link.name }}</h5> <!-- Titolo più visibile -->
+          <h5 class="it-card-title mb-2">{{ link.name }}</h5> <!-- Titolo -->
+          <p class="it-card-text text-muted">{{ link.description }}</p> <!-- Descrizione (se presente) -->
         </a>
       </div>
     </div>
