@@ -2,23 +2,17 @@
 layout: base
 ---
 
-<div class="it-container mt-4">
-  <div class="it-row justify-content-center">
-
+<div class="container mt-5">
+  <div class="row">
     {% for link in page.links %}
-    <div class="col-6 col-md-6 mb-4"> <!-- Due per riga -->
-      <div class="it-card it-card-body text-center border-0">
-        <a href="{{ link.url }}" class="d-block text-decoration-none">
-          <!-- Icona Rossa tramite Sprite SVG di Bootstrap Italia -->
-          <svg class="it-icon it-icon-lg mb-3" style="fill: red;">
-            <use xlink:href="/media/sprite.svg#it-file"></use>
-          </svg>
-          <h5 class="it-card-title mb-2">{{ link.name }}</h5> <!-- Titolo -->
-          <p class="it-card-text text-muted">{{ link.description }}</p> <!-- Descrizione (se presente) -->
-        </a>
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">{{ link.name }}</h5>
+            <a href="{{ link.url }}" class="btn btn-primary">Vai al link</a>
+          </div>
+        </div>
       </div>
-    </div>
     {% endfor %}
-
   </div>
 </div>
