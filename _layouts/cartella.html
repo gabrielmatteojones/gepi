@@ -1,20 +1,16 @@
 ---
 layout: base
 ---
-<main class="container my-4">
-  <div class="row g-3">
-    {% for link in page.links %}
-    <!-- CARD -->
-    <div class="col-6 col-sm-4 col-md-2">
-      <a href="{{ link.url | default: '#' }}">
-        <div class="square">
-          <svg class="icon">
-            <use href="/media/sprites.svg#it-folder"></use>
-          </svg>
-          <h4>{{ link.name }}</h4>
-        </div>
-      </a>
-    </div>
-    {% endfor %}
+
+<div class="scheda-testo ng-star-inserted">
+  <h4 class="ng-star-inserted">
+    <a target="_blank" href="{{ link.url | default: '#' }}" title="{{ link.name }}">
+      {{ link.name }}
+    </a>
+  </h4>
+  <div class="container text-break">
+    <p class="ng-star-inserted">
+      Link Esterno
+    </p>
   </div>
-</main>
+</div>
