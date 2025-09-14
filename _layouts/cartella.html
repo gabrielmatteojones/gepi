@@ -3,14 +3,12 @@ layout: base
 ---
 <main class="container my-4">
   <div class="row g-3">
-    {% for card in page.cards %}
+    {% for link in page.links %}
     <div class="col-6 col-sm-4 col-md-2">
-      <a href="{{ card.url | default: '#' }}">
+      <a href="{{ link.url | default: '#' }}">
         <div class="square">
-          <svg class="icon">
-            <use href="/media/sprites.svg#{{ card.icon | default: 'it-folder' }}"></use>
-          </svg>
-          <h4>{{ card.name }}</h4>
+          <svg class="icon"><use href="/media/sprites.svg#it-folder"></use></svg>
+          <h4>{{ link.name }}</h4>
         </div>
       </a>
     </div>
