@@ -1,19 +1,19 @@
 ---
 layout: base
 ---
-<div class="container mt-4">
-  <div class="row justify-content-center">
+<div class="it-container mt-4">
+  <div class="it-row justify-content-center">
 
     {% for link in page.links %}
     <div class="col-6 col-sm-3 col-md-2 mb-4">
-      <div class="card text-center border-0">
+      <div class="it-card text-center border-0">
         <a href="{{ link.url }}" class="d-block">
           <!-- Icona tramite Sprite SVG di Bootstrap Italia -->
-          <svg class="icon">
+          <svg class="it-icon">
             <use xlink:href="/media/sprite.svg#it-file"></use>
           </svg>
-          <div class="card-body p-1">
-            <p class="card-text">{{ link.name }}</p>
+          <div class="it-card-body p-1">
+            <p class="it-card-text">{{ link.name }}</p>
           </div>
         </a>
       </div>
