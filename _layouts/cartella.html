@@ -6,7 +6,7 @@ layout: base
   <div class="it-row justify-content-center">
 
     {% for link in page.links %}
-    <div class="col-6 col-sm-3 col-md-2 mb-4">
+    <div class="col-6 col-md-6 mb-4"> <!-- 2 per riga, quindi 6 per ogni colonna su schermi medi e superiori -->
       <div class="it-card text-center border-0">
         <a href="{{ link.url }}" class="d-block">
           <!-- Icona tramite Sprite SVG di Bootstrap Italia -->
