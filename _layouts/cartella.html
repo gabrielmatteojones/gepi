@@ -1,18 +1,13 @@
 ---
 layout: base
 ---
-<main class="container my-4">
-  <div class="row g-3">
-    <!-- loop dinamico -->
-    {% for voce in page.links %}
-    <div class="col-6 col-sm-4 col-md-2">
-      <a href="{{ voce.url }}">
-        <div class="square">
-          <svg class="icon"><use href="/media/sprites.svg#it-folder"></use></svg>
-          <h4>{{ voce.name }}</h4>
-        </div>
+
+<div class="col-6 col-sm-4 col-md-2">
+      <div class="square">
+      <a href="{{ card.url | default: '#' }}">
+            <svg class="icon"><use href="/media/sprites.svg#it-folder"></use></svg>
+            <h4>{{ card.name }}</h4>
+            <p>{{ card.url }}</p>
       </a>
+        </div>
     </div>
-    {% endfor %}
-  </div>
-</main>
