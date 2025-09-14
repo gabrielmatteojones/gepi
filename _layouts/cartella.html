@@ -1,0 +1,16 @@
+---
+layout: base
+---
+
+{% for voce in page.links %}
+<div class="col-6 col-sm-4 col-md-2">
+  <a href="{{ voce.url }}">
+    <div class="square">
+      <svg class="icon">
+        <use href="/media/sprites.svg#it-folder"></use>
+      </svg>
+      <h4>{{ voce.name }}</h4>
+    </div>
+  </a>
+</div>
+{% endfor %}
