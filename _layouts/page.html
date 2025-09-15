@@ -2,7 +2,6 @@
 layout: base
 ---
 
-
   <!-- LAYOUT PRINCIPALE -->
   <div class="container my-4">
     <div class="row">
@@ -25,7 +24,8 @@ layout: base
                     </div>
                   </div>
                   <ul class="link-list">
-                    {% toc only: h2,h3 %}
+                    {% assign toc_html = page.content | toc_only %}
+                    {{ toc_html }}
                   </ul>
                 </div>
               </div>
