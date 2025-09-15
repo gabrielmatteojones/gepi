@@ -2,8 +2,8 @@ backend:
   name: git-gateway
   branch: "48891"  # o master, a seconda del tuo repo
 
-media_folder: "assets/images"   # dove vengono salvate le immagini
-public_folder: "/assets/images"  # percorso pubblico per le immagini
+media_folder: "assets/images"
+public_folder: "/assets/images"
 
 collections:
   # COLLEZIONE ARTICOLI
@@ -27,11 +27,11 @@ collections:
       - { label: "Contenuto", name: "body", widget: "markdown" }
 
   # COLLEZIONE PAGINE
-  - name:     "pagine"
-    label:    "Pagine"
-    folder:   "it"
-    slug:     "{{slug}}"
-    create:   true
+  - name: "pagine"
+    label: "Pagine"
+    folder: "it"
+    slug: "{{slug}}"
+    create: true
     fields:
       - { label: "Titolo", name: "title", widget: "string" }
       - { label: "Descrizione", name: "description", required: false, widget: "string" }
@@ -43,7 +43,7 @@ collections:
       - { label: "Lingua", name: "lang", required: false, widget: "string" }
       - { label: "Contenuto", name: "body", widget: "markdown" }
 
-
+  # COLLEZIONE VP
   - name: "vp"
     label: "VP Pages"
     folder: "links"
@@ -59,7 +59,8 @@ collections:
         fields:
           - { label: "Nome", name: "name", widget: "string" }
           - { label: "URL", name: "url", widget: "string" }
-collections:
+
+  # COLLEZIONE DOCUMENTI PUBBLICI
   - name: "documenti_pubblici"
     label: "Documenti pubblici"
     folder: "content/documenti_pubblici"
