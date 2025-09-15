@@ -2,19 +2,19 @@
 layout: base
 ---
 
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <script>
-  // Funzione per controllare se l'utente è loggato
-  function isLoggedIn() {
-    // Esegui il controllo se l'utente è loggato (ad esempio, usando sessionStorage o cookie)
-    // Qui, come esempio, usiamo sessionStorage, ma puoi personalizzare come vuoi.
-    return sessionStorage.getItem('userLoggedIn') === 'true'; 
-  }
-
-  // Se l'utente non è loggato, lo reindirizziamo alla pagina 404
-  if (!isLoggedIn()) {
-    window.location.href = '/404.html';
-  }
+  document.addEventListener('DOMContentLoaded', function () {
+    netlifyIdentity.on('init', user => {
+      if (!user) {
+        // Nessun utente loggato → redirect
+        window.location.href = '/404.html';
+      }
+    });
+    netlifyIdentity.init();
+  });
 </script>
+
 
 <div class="block listing simpleCard">
   <div class="public-ui">
