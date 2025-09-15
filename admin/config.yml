@@ -68,6 +68,7 @@ collections:
     slug: "{{slug}}"
     preview_path: "documento_pubblico/{{slug}}"
     fields:
+      - { label: "Permalink", name: "permalink", widget: "string" }
       - { label: "Layout", name: "layout", widget: "hidden", default: "doc" }
       - { label: "Titolo", name: "title", widget: "string" }
       - { label: "ID Protocollo", name: "id", widget: "string" }
