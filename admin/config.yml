@@ -59,3 +59,28 @@ collections:
         fields:
           - { label: "Nome", name: "name", widget: "string" }
           - { label: "URL", name: "url", widget: "string" }
+collections:
+  - name: "documenti_pubblici"
+    label: "Documenti pubblici"
+    folder: "content/documenti_pubblici"
+    create: true
+    slug: "{{slug}}"
+    preview_path: "documento_pubblico/{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "doc" }
+      - { label: "Titolo", name: "title", widget: "string" }
+      - { label: "ID Protocollo", name: "id", widget: "string" }
+      - { label: "Data", name: "date", widget: "datetime", format: "YYYY-MM-DD" }
+      - { label: "Ultimo aggiornamento", name: "update", widget: "datetime", format: "YYYY-MM-DD" }
+      - { label: "Descrizione breve", name: "descrizionebreve", widget: "text" }
+      - { label: "Descrizione completa", name: "descrizione", widget: "markdown" }
+      - { label: "Documento (file o link)", name: "doc", widget: "file", allow_multiple: false }
+      - label: "Unità Organizzativa responsabile"
+        name: "uo"
+        widget: "object"
+        fields:
+          - { label: "Nome", name: "nome", widget: "string" }
+          - { label: "Link", name: "link", widget: "string", required: false }
+          - { label: "Descrizione", name: "descrizione", widget: "string", required: false }
+      - { label: "Formati disponibili", name: "formati", widget: "list", default: ["PDF"] }
+      - { label: "Licenza distribuzione", name: "licenza", widget: "string", default: "pubblico dominio" }
