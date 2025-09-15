@@ -17,16 +17,11 @@ layout: base
                   </button>
                 </h2>
                 <div id="collapseIndex" class="accordion-collapse collapse show" aria-labelledby="headingIndex">
-                  <div class="accordion-body">
-                    <div class="it-navscroll-progress mb-2">
-                      <div class="progress">
-                        <div class="progress-bar it-navscroll-progressbar" role="progressbar" style="width:0%;"></div>
-                      </div>
-                    </div>
-                    <ul class="link-list" data-element="page-index">
-                      {{ content | toc }}
-                    </ul>
-                  </div>
+<div class="accordion-body">
+  {% assign toc_html = content | toc %}
+  {{ toc_html | replace: '<ul>', '<ul class="link-list">' }}
+</div>
+
                 </div>
               </div>
             </div>
