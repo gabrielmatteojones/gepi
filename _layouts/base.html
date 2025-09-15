@@ -325,3 +325,14 @@ layout: default
     }
   }
 </style>
+  <script src="{{ '/assets/js/bootstrap.bundle.min.js' | relative_url }}"></script>
+  <script>
+    // Aggiorna la progress bar dell'indice
+    const progressBar = document.querySelector('.it-navscroll-progressbar');
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.body.scrollHeight - window.innerHeight;
+      const scrollPercent = (scrollTop / docHeight) * 100;
+      if(progressBar) progressBar.style.width = scrollPercent + '%';
+    });
+  </script>
