@@ -25,5 +25,4 @@ uo:
 formati:
   - PDF
 licenza: pubblico dominio
-permalink: /doc/esempio/
 ---

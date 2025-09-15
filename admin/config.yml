@@ -63,7 +63,7 @@ collections:
   # COLLEZIONE DOCUMENTI PUBBLICI
   - name: "documenti_pubblici"
     label: "Documenti pubblici"
-    folder: "content/documenti_pubblici"
+    folder: "doc"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     preview_path: "documento_pubblico/{{slug}}"
