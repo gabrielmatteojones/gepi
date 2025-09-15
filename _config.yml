@@ -35,6 +35,7 @@ sass:
 plugins:
   - jekyll-sitemap
   - jekyll-feed
+  - jekyll-toc
 
 # Escludi questi file dalla build
 exclude:

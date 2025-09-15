@@ -14,3 +14,4 @@ gem 'jekyll-sitemap', '~> 1.0'
 gem 'bundler', '~> 2.0'
 
 gem "jekyll-admin"
+gem "jekyll-toc", "~> 0.19.0"
