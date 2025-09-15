@@ -1,115 +1,178 @@
 ---
 layout: base
 ---
-
-<div class="container">
-  <div class="row border-top border-light row-column-border row-column-menu-left">
-    <aside class="col-lg-4">
-      <div class="cmp-navscroll sticky-top" aria-labelledby="accordion-title-one">
-        <nav class="navbar it-navscroll-wrapper navbar-expand-lg" aria-label="Indice della pagina" data-bs-navscroll>
-          <div class="navbar-custom" id="navbarNavProgress">
-            <div class="menu-wrapper">
-              <div class="link-list-wrapper">
-                <div class="accordion">
-                  <div class="accordion-item">
-                    <span class="accordion-header" id="accordion-title-one">
-                      <button class="accordion-button pb-10 px-3 text-uppercase" type="button" aria-controls="collapse-one" aria-expanded="true" data-bs-toggle="collapse" data-bs-target="#collapse-one">
-                        INDICE DELLA PAGINA
-                        <svg class="icon icon-sm icon-primary align-top">
-                          <use xlink:href="#it-expand"></use>
-                        </svg>
-                      </button>
-                    </span>
-                    <div class="progress">
-                      <div class="progress-bar it-navscroll-progressbar" role="progressbar" aria-valuenow="3.69" aria-valuemin="0" aria-valuemax="100" style="width: 3.69%;"></div>
-                    </div>
-                    <div id="collapse-one" class="accordion-collapse collapse show" role="region" aria-labelledby="accordion-title-one">
-                      <div class="accordion-body">
-                        <ul class="link-list" data-element="page-index">
-                          <li class="nav-item"><a class="nav-link active" href="#descrizione"><span class="title-medium">Descrizione</span></a></li>
-                          <li class="nav-item"><a class="nav-link" href="#tipo_documento"><span class="title-medium">Tipo di documento</span></a></li>
-                          <li class="nav-item"><a class="nav-link" href="#documenti"><span class="title-medium">Documento</span></a></li>
-                          <li class="nav-item"><a class="nav-link" href="#redattori"><span class="title-medium">Redattori</span></a></li>
-                          <li class="nav-item"><a class="nav-link" href="#formati"><span class="title-medium">Formati disponibili</span></a></li>
-                          <li class="nav-item"><a class="nav-link" href="#licenza"><span class="title-medium">Licenza di distribuzione</span></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div><!-- /.accordion-item -->
-                </div><!-- /.accordion -->
-              </div>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </aside>
-
-    <section class="col-lg-8 it-page-sections-container border-light" data-audio>
-      <article id="descrizione" class="it-page-section anchor-offset">
-        <h3>Descrizione</h3>
-        <div class="richtext-wrapper lora">
-          <p>{{ page.descrizione }}</p>
-        </div>
-      </article>
-
-      <article id="tipo_documento" class="it-page-section anchor-offset mt-5">
-        <h3>Tipo di documento</h3>
-        <div class="richtext-wrapper lora">
-          <a class="text-decoration-none" href="{{ page.tipo_documento_link }}" aria-label="Vai all'archivio {{ page.tipo_documento }}" title="Vai all'archivio {{ page.tipo_documento }}">
-            {{ page.tipo_documento }}
-          </a>
-        </div>
-      </article>
-
-      <article id="documenti" class="it-page-section anchor-offset mt-5">
-        <h3>Documento</h3>
-        <div class="card card-teaser shadow-sm p-4s rounded border border-light flex-nowrap m-1">
-          <svg class="icon" aria-hidden="true">
-            <use xlink:href="#it-clip"></use>
-          </svg>
-          <div class="card-body">
-            <h5 class="card-title">
-              <a class="text-decoration-none" href="{{ page.documento_link }}">
-                {{ page.documento_nome }} ({{ page.documento_peso }})
-              </a>
-            </h5>
-          </div>
-        </div>
-      </article>
-
-      <article id="redattori" class="it-page-section anchor-offset mt-5">
-        <h3>Redattori</h3>
-        <div class="row">
-          <div class="col-sm-6">
-            <div class="card card-teaser card-teaser-info rounded p-3 m-1 bx-shadow-sm">
-              <div class="card-body pe-3">
-                <h5 class="card-title fs-5 fw-semibold">
-                  <a class="text-decoration-none" href="{{ page.redattore_link }}" data-element="service-area">
-                    {{ page.redattore_nome }}
-                  </a>
-                </h5>
-                <div class="card-text">
-                  <p>{{ page.redattore_descrizione }}</p>
+<main>
+                    <div class="container" id="main-container">
+                <div class="row">
+                    <div class="col px-lg-4">
+                        
+<div class="cmp-breadcrumbs " role="navigation">
+  <nav class="breadcrumb-container" aria-label="breadcrumb"><ol class="breadcrumb p-0" data-element="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList"><meta name="numberOfItems" content="5"><meta name="itemListOrder" content="Ascending"><li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem" class="breadcrumb-item trail-begin"><a href="https://comuni.designers.italia.it/" rel="home" itemprop="item"><span itemprop="name">Home</span></a><meta itemprop="position" content="1"></li><li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem" class="breadcrumb-item"><span class="separator">/</span><a href="https://comuni.designers.italia.it/amministrazione" itemprop="item"><span itemprop="name">Amministrazione</span></a><meta itemprop="position" content="2"></li><li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem" class="breadcrumb-item"><span class="separator">/</span><a href="https://comuni.designers.italia.it/documento_pubblico" itemprop="item"><span itemprop="name">Documenti pubblici</span></a><meta itemprop="position" content="3"></li><li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem" class="breadcrumb-item"><span class="separator">/</span><a href="https://comuni.designers.italia.it/tipi_documento/atto-normativo/" itemprop="item"><span itemprop="name">Atto normativo</span></a><meta itemprop="position" content="4"></li><li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem" class="breadcrumb-item active"><span class="separator">/</span><span itemprop="item"><span itemprop="name">Uso temporaneo di spazi e locali scolastici</span></span><meta itemprop="position" content="5"></li></ol></nav></div>                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
+                <div class="row">
+                    <div class="col-lg-8 px-lg-4 py-lg-2">
+                        <h1>{{ page.title }}</h1>
+                        <h2 class="visually-hidden">Dettagli del documento</h2>
+                                                    <h4>Protocollo {{ page.id }} del {{ page.date }}</h4>
+                                                <p> {{ page.descrizionebreve }} </p>
+                    </div>
+                    <div class="col-lg-3 offset-lg-1">
+                    </div>
+                </div>
+            </div><!-- ./main-container -->
 
-      <article id="formati" class="it-page-section anchor-offset mt-5">
-        <h3>Formati disponibili</h3>
-        <div class="richtext-wrapper lora">
-          <p>{{ page.formati }}</p>
-        </div>
-      </article>
+            <div class="container">
+                <div class="row border-top border-light row-column-border row-column-menu-left">
+                    <aside class="col-lg-3">
+                        <div class="cmp-navscroll sticky-top" aria-labelledby="accordion-title-one">
+                            <nav class="navbar it-navscroll-wrapper navbar-expand-lg" aria-label="Indice della pagina" data-bs-navscroll="">
+                                <div class="navbar-custom" id="navbarNavProgress">
+                                    <div class="menu-wrapper">
+                                        <div class="link-list-wrapper">
+                                            <div class="accordion">
+                                                <div class="accordion-item">
+                                                    <span class="accordion-header" id="accordion-title-one">
+                                                        <button class="accordion-button pb-10 px-3 text-uppercase" type="button" aria-controls="collapse-one" aria-expanded="true" data-bs-toggle="collapse" data-bs-target="#collapse-one">INDICE DELLA PAGINA
+                                                            <svg class="icon icon-sm icon-primary align-top">
+                                                                <use xlink:href="#it-expand"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </span>
+                                                    <div class="progress">
+                                                        <div class="progress-bar it-navscroll-progressbar" role="progressbar" aria-valuenow="0.10309278350515465" aria-valuemin="0" aria-valuemax="100" style="width: 0.103093%;"></div>
+                                                    </div>
+                                                    <div id="collapse-one" class="accordion-collapse collapse show" role="region" aria-labelledby="accordion-title-one">
+                                                        <div class="accordion-body">
+                                                            <ul class="link-list" data-element="page-index">
+                                                                                                                                <li class="nav-item">
+                                                                    <a class="nav-link active" href="#descrizione">
+                                                                        <span>Descrizione</span>
+                                                                    </a>
+                                                                </li>
+                                                                
+                                                                                                                                <li class="nav-item">
+                                                                    <a class="nav-link" href="#documento">
+                                                                        <span>Documento</span>
+                                                                    </a>
+                                                                </li>
+                                                                
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link" href="#ufficio_responsabile">
+                                                                        <span>Org</span>
+                                                                    </a>
+                                                                </li>
 
-      <article id="licenza" class="it-page-section anchor-offset mt-5">
-        <h3>Licenza di distribuzione</h3>
-        <div class="richtext-wrapper lora">
-          <p>{{ page.licenza }}</p>
+                                                                
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link" href="#formati_disponibili">
+                                                                        <span>Formati disponibili</span>
+                                                                    </a>
+                                                                </li>
+
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link" href="#licenza_distribuzione">
+                                                                        <span>Licenza di distribuzione</span>
+                                                                    </a>
+                                                                </li>																
+
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </aside>
+
+                    <div class="col-12 col-lg-9">
+                        <div class="it-page-sections-container">
+                                                        <section id="descrizione" class="it-page-section mb-5">
+                                <h4>Descrizione</h4>
+                                <div class="richtext-wrapper lora">
+<p> {{ page.descrizione }} </p>
+							                  </div>
+                            </section>
+                            
+                                                        <section id="documento" class="it-page-section mb-5">
+                                <h4>Documento</h4>
+                                <div class="card-wrapper card-teaser-wrapper card-teaser-wrapper-equal">
+                                                                        <div class="card card-teaser shadow-sm p-4 mt-3 rounded border border-light flex-nowrap">
+                                            <svg class="icon" aria-hidden="true">
+                                                <use xlink:href="#it-clip"></use>
+                                            </svg>
+                                            <div class="card-body">
+                                                <h5 class="card-title">
+                                                    <a class="text-decoration-none" href="{{ page.doc }}" aria-label="Scarica il documento" title="Scarica il documento">
+                                                        Scarica il documento
+                                                    </a>
+                                                </h5>
+                                            </div>
+                                        </div>
+                                                                    </div><!-- ./card-wrapper -->
+                            </section>
+                            
+                            <section id="ufficio_responsabile" class="it-page-section mb-5">
+                                <h4>Unità Organizzativa responsabile</h4>
+                                <div class="card-wrapper card-teaser-wrapper card-teaser-wrapper-equal">
+                                    <div class="card card-teaser border rounded shadow p-4 flex-nowrap">
+    <div class="card-body pe-3">
+        <h4 class="u-main-black mb-1 title-small-semi-bold-medium">
+            <a class="text-decoration-none" href="http://jonez.it/FOIA/">
+            FOIA            </a>
+        </h4>
+        <div class="card-text">
+            <p>Ufficio per la trasparenza</p>
         </div>
-      </article>
-    </section>
-  </div>
-</div>
+    </div>
+    </div>
+
+                                </div>
+                            </section>
+
+                            
+                                                        <section id="formati_disponibili" class="it-page-section mb-5">
+                                <h4>Formati disponibili</h4>
+                                <div class="richtext-wrapper lora">
+                                    <p>PDF</p>
+		
+                                </div>
+                            </section>
+                            
+                                                        <section id="licenza_distribuzione" class="it-page-section mb-5">
+                                <h4>Licenza distribuzione</h4>
+                                <div class="richtext-wrapper lora">
+                                    pubblico dominio                                </div>
+                            </section>
+                            
+                            
+                            
+                            
+                            
+                            
+                                                    </div><!-- /it-page-sections-container -->
+
+                        <div>
+                            
+<article id="ultimo-aggiornamento" class="it-page-section mt-5">
+    <h4 class="h6">Data di creazione:
+    <span class="h6 fw-normal">{{ page.date }}</span>
+    <h4 class="h6">Ultimo aggiornamento:
+    <span class="h6 fw-normal">{{ page.update }}</span>
+    </h4>
+</article>                        </div>
+
+										</div><!-- ./col-12 col-9 -->
+
+                </div><!-- ./row border-top border-light row-column-border row-column-menu-left -->
+            </div><!-- ./container -->
+
+</main>
