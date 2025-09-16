@@ -60,15 +60,10 @@ permalink: "/FOIA/"
 
         <h3 class="h5">{{ documento.title }}</h3>
 
-        <p class="mb-1"><strong>Numero:</strong> {{ documento.id }}</p>
+        <p class="mb-1"><strong>Numero:</strong> {{ documento.num }}</p>
         <p class="mb-1"><strong>Dipartimento:</strong> {{ documento.uo.nome }}</p>
         <p class="mb-1"><strong>Descrizione breve:</strong> {{ documento.descrizionebreve }}</p>
         <p class="mb-1"><strong>Ultimo aggiornamento:</strong> {{ documento.update | date: "%d/%m/%Y" }}</p>
-
-        {% if documento.doc %}
-          <p><a href="{{ documento.doc }}" class="btn btn-sm btn-outline-primary" target="_blank">Scarica documento</a></p>
-        {% endif %}
-
         <a href="{{ documento.url }}" class="btn btn-sm btn-secondary">Vedi dettaglio</a>
       </div>
     {% endfor %}

@@ -1,7 +1,7 @@
 ---
 layout: doc
 title: Dichiarazione di accessibilità
-id: "1001"
+num: "1001"
 date: 2025-09-16
 update: 2025-09-16
 descrizionebreve: Dichiarazione di accessibilità dei siti jonez.it
