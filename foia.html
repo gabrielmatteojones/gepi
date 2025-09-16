@@ -4,6 +4,12 @@ title: "FOIA"
 permalink: "/FOIA/"
 ---
 
+
+<div class="container"><div id="intro"><div class="ca"><!----><div role="region" aria-label="Contenuto principale della pagina" class="col-md-8 col-lg-8"><!----><!----><!----><h2 class="title-xxxlarge pt-4">FOIA</h2><!----><!----><!----><!----><!----><!----><!----><h3 class="sr-only visually-hidden">Contenuto</h3><!----><p></p><!----><!----><div class="row mt-2"><div><small><span>Data pubblicazione:</span><br><strong>03/02/22</strong></small><!----></div><!----></div><!----></div><!----><!----><!----><!----><!----></div><!----><!----></div></div>
+
+
+
+
 <div class="container my-5">
   <h1 class="mb-4">FOIA</h1>
 
@@ -19,7 +25,7 @@ permalink: "/FOIA/"
       </div>
 
       <div class="form-group col-md-3">
-        <input type="text" id="dipartimento" class="form-control" placeholder="dipartimento">
+        <input type="text" id="dipartimento" class="form-control" placeholder="Dipartimento">
       </div>
 
       <div class="form-group col-md-3">
@@ -27,7 +33,7 @@ permalink: "/FOIA/"
           <option value="">Tutte le tipologie</option>
           {% assign tipi = site.doc | map: "title" | uniq %}
           {% for t in tipi %}
-          <option value="{{ t }}">{{ t }}</option>
+            <option value="{{ t }}">{{ t }}</option>
           {% endfor %}
         </select>
       </div>
@@ -44,25 +50,27 @@ permalink: "/FOIA/"
       Risultati trovati: <span id="conteggio">{{ site.doc | size }}</span>
     </div>
 
-    {% for documento in site.doc %}
-    <div class="col-12 amministrazione amministrazione-primary documento p-3 mb-4 rounded shadow-sm"
-         data-numero="{{ documento.id }}"
-         data-testo="{{ documento.descrizionebreve | downcase }} {{ documento.descrizione | downcase }}"
-         data-dipartimento="{{ documento.uo.nome | downcase }}"
-         data-tipologia="{{ documento.title | downcase }}">
+    {% assign doc_ordinati = site.doc | sort: "update" | reverse %}
+    {% for documento in doc_ordinati %}
+      <div class="col-12 amministrazione amministrazione-primary documento p-3 mb-4 rounded shadow-sm"
+           data-numero="{{ documento.id }}"
+           data-testo="{{ documento.descrizionebreve | downcase }} {{ documento.descrizione | downcase }}"
+           data-dipartimento="{{ documento.uo.nome | downcase }}"
+           data-tipologia="{{ documento.title | downcase }}">
 
-      <h3 class="h5">{{ documento.title }}</h3>
+        <h3 class="h5">{{ documento.title }}</h3>
 
-      <p class="mb-1"><strong>Numero:</strong> {{ documento.id }}</p>
-      <p class="mb-1"><strong>dipartimento:</strong> {{ documento.uo.nome }}</p>
-      <p class="mb-1"><strong>Descrizione breve:</strong> {{ documento.descrizionebreve }}</p>
+        <p class="mb-1"><strong>Numero:</strong> {{ documento.id }}</p>
+        <p class="mb-1"><strong>Dipartimento:</strong> {{ documento.uo.nome }}</p>
+        <p class="mb-1"><strong>Descrizione breve:</strong> {{ documento.descrizionebreve }}</p>
+        <p class="mb-1"><strong>Ultimo aggiornamento:</strong> {{ documento.update | date: "%d/%m/%Y" }}</p>
 
-      {% if documento.doc %}
-        <p><a href="{{ documento.doc }}" class="btn btn-sm btn-outline-primary" target="_blank">Scarica documento</a></p>
-      {% endif %}
+        {% if documento.doc %}
+          <p><a href="{{ documento.doc }}" class="btn btn-sm btn-outline-primary" target="_blank">Scarica documento</a></p>
+        {% endif %}
 
-      <a href="{{ documento.url }}" class="btn btn-sm btn-secondary">Vedi dettaglio</a>
-    </div>
+        <a href="{{ documento.url }}" class="btn btn-sm btn-secondary">Vedi dettaglio</a>
+      </div>
     {% endfor %}
   </div>
 </div>
