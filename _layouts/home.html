@@ -1,145 +1,103 @@
 ---
-layout: base
+layout: default
+title: Articoli
 ---
-<div class="shadow-lg p-0 mb-5 bg-white">
-<section class="it-hero-wrapper it-text-centered">
-   <div class="container">
-      <div class="row">
-         <div class="col-12">
-            <div class="it-hero-text-wrapper bg-dark">
-               <h2>Benvenuti su Jonez!</h2>
-               <span class="it-category">Benvenuti su Jonez! Questo sito racchiude tutti i servizi, organizzazioni, progetti, amministrazioni, e tutto ciò che include il mondo di Jonez Project </span>
-               <div class="it-btn-container"><a class="btn btn-sm btn-outline-primary" href="/jonez/">Scopri il progetto</a></div>
-            </div>
-         </div>
-      </div>
-   </div>
-</section>
-</div>
-<br>
+<main>
+
+<div class="bg-dark text-secondary px-4 py-5 text-center"> <div class="py-5"> <h1 class="display-5 fw-bold text-white">Jonez</h1> <div class="col-lg-6 mx-auto text-white"> <p class="fs-5 mb-4">Benvenuti nel sito Jonez! L'amministrazione, blog, servizi e progetti tutto in un unico posto</p> <div class="d-grid gap-2 d-sm-flex justify-content-sm-center"> <a href="{{ site.url }}/dipartimenti/centrale/"><button type="button" class="btn btn-outline-light btn-lg px-4">Amministrazione</button></a> </div> </div> </div> </div><br>
+
 
 <div class="container">
-<div class="shadow-lg p-0 mb-5 bg-white">
-  <!-- _includes/blog-section.html -->
-<section class="it-section py-5 bg-light">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center mb-4">
-        <h2 class="h2">Ultimi articoli dal blog</h2>
-        <p class="lead">Approfondimenti, novità e storie dal nostro team</p>
-      </div>
-    </div>
-    <div class="row">
-      {% for post in site.posts limit:3 %}
-      <div class="col-12 col-md-4 mb-4">
-        <div class="card-wrapper h-100">
-          <div class="card card-bg card-big">
-            {% if post.image %}
-            <div class="card-image-wrapper">
-              <img src="{{ post.image }}" alt="{{ post.title }}" class="card-image blog-thumb">
-            </div>
-            {% endif %}
-            <div class="card-body">
-              <h5 class="card-title">
-                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-              </h5>
-              <p class="card-text">{{ post.excerpt | strip_html | truncate: 100 }}</p>
-              <span class="text-muted small">{{ post.date | date: "%d %B %Y" }}</span>
-            </div>
-            <div class="card-footer">
-              <a href="{{ post.url | relative_url }}" class="read-more">Leggi di più</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-    <div class="row mt-4">
-      <div class="col text-center">
-        <a href="{{ '/blog/' | relative_url }}" class="btn btn-primary">Vai al blog</a>
-      </div>
-    </div>
-  </div>
-</section>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Organizzazione</th>
+      <th scope="col">Amministrazione</th>
+      <th scope="col">Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Jonez</td>
+      <td><a href="{{ site.url }}/dipartimenti/centrale/">Amministrazione Centrale</a></td>
+      <td><a href="{{ site.url }}/jonez/">@AGFO</a></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>AGFO</td>
+      <td><a href="{{ site.url }}/dipartimenti/agfo/">Amministrazione AGFO</a></td>
+      <td><a href="{{ site.url }}/progetti/php/agfo/">@AGFO</a></td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>UPID</td>
+      <td><a href="{{ site.url }}/dipartimenti/centrale/seconda/">Seconda Amministrazione</a></td>
+      <td><a href="{{ site.url }}/progetti/php/upid/">@UPID</a></td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>Stampa & Comunicazione</td>
+      <td><a href="{{ site.url }}/dipartimenti/stampa/">Dipartimento Stampa</a></td>
+      <td><a href="{{ site.url }}/dipartimenti/stampa/">@Stampa</a></td>
+    </tr>
+  </tbody>
+</table>
 </div>
 
-<!-- stile custom per le immagini -->
-<style>
-  .blog-thumb {
-    width: 100%;
-    height: 200px;/* altezza fissa */
-    object-fit: cover;/* mantiene proporzioni e ritaglia */
-    border-radius: .25rem;
-  }
-</style>
-<br>
 
-<div class="block listing simpleCard">
-  <div class="public-ui">
-    <div class="full-width " aria-live="polite">
-      <div class="px-4 container">
-        <div class="simple-card-compact-template">
-          <div class="row">
-            <div class="col">
-              <h2 class="mb-4 mt-5 title-bottom-line">Distretti</h2>
-            </div>
-          </div>
-          <div class="card-wrapper card-teaser-wrapper card-teaser-wrapper-equal card-teaser-block-3 mb-3">
 
-            <div class="align-items-center rounded shadow card-teaser card">
-              <div class="icon-argument-container"></div>
-              <div class="card-body">
-                <h3 class="card-title">
-                  <a data-element="custom-category-link" href="/distretti/educazione/">Educazione</a>
-                </h3>
-              </div>
-            </div>
 
-            <div class="align-items-center rounded shadow card-teaser card">
-              <div class="icon-argument-container"></div>
-              <div class="card-body">
-                <h3 class="card-title">
-                  <a data-element="custom-category-link" href="/distretti/stampa/">Stampa</a>
-                </h3>
-              </div>
-            </div>
 
-            <div class="align-items-center rounded shadow card-teaser card">
-              <div class="icon-argument-container"></div>
-              <div class="card-body">
-                <h3 class="card-title">
-                  <a data-element="custom-category-link" href="/distretti/politico/">Politico</a>
-                </h3>
-              </div>
-            </div>
 
-            <div class="align-items-center rounded shadow card-teaser card">
-              <div class="icon-argument-container"></div>
-              <div class="card-body">
-                <h3 class="card-title">
-                  <a data-element="custom-category-link" href="/distretti/cultura/">Cultura</a>
-                </h3>
-              </div>
-            </div>
 
-            <div class="align-items-center rounded shadow card-teaser card">
-              <div class="icon-argument-container"></div>
-              <div class="card-body">
-                <h3 class="card-title">
-                  <a data-element="custom-category-link" href="/distretti/direttivo/">Direttivo</a>
-                </h3>
-              </div>
-            </div>
 
-            <div class="align-items-center rounded shadow card-teaser card">
-              <div class="icon-argument-container"></div>
-              <div class="card-body">
-                <h3 class="card-title">
-                  <a data-element="custom-category-link" href="/distretti/gjws/">GJWS</a>
-                </h3>
-              </div>
-            </div>
-          </div>
+<br><div class="bg-dark text-primary px-4 py-5"> <div class="py-5 container"> <h1 class="display-5 fw-bold text-white">Jonez</h1> <div class="col-lg-6 mx-auto text-white"></div> </div> </div><br>
+
+
+<div class="container my-5">
+  <div class="row g-4">
+    <!-- Colonna sinistra -->
+    <div class="col-md-6">
+      <div class="card shadow mb-3">
+        <div class="text-center">
+          <i class="bi bi-emoji-smile-fill fs-1 mb-2"></i>
+          <h5 class="card-title">Infanzia</h5>
+        </div>
+      </div>
+      <div class="card shadow mb-3">
+        <div class="text-center">
+          <i class="bi bi-laptop-fill fs-1 mb-2"></i>
+          <h5 class="card-title">Innovazione digitale</h5>
+        </div>
+      </div>
+      <div class="card shadow mb-3">
+        <div class="text-center">
+          <i class="bi bi-people-fill fs-1 mb-2"></i>
+          <h5 class="card-title">Civica</h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- Colonna destra -->
+    <div class="col-md-6">
+      <div class="card shadow mb-3">
+        <div class="text-center">
+          <i class="bi bi-file-earmark-text-fill fs-1 mb-2"></i>
+          <h5 class="card-title">Amministrazione</h5>
+        </div>
+      </div>
+      <div class="card shadow mb-3">
+        <div class="text-center">
+          <i class="bi bi-folder-fill fs-1 mb-2"></i>
+          <h5 class="card-title">FOIA</h5>
+        </div>
+      </div>
+      <div class="card shadow mb-3">
+        <div class="text-center">
+          <i class="bi bi-stars fs-1 mb-2"></i>
+          <h5 class="card-title">Altre</h5>
         </div>
       </div>
     </div>
@@ -168,117 +126,4 @@ layout: base
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   <div class="container">
-  <div class="row pt-5">
-    <h2 class="mb-0 u-grey-light">Siti tematici</h2>
-  </div>
-  <div class="pt-4 pt-lg-30">
-    <div class="card-wrapper card-teaser-wrapper card-teaser-wrapper-equal card-teaser-block-3">
-      
-<a href="https://foia.jonez.it/" class="card card-teaser card-bg-black rounded mt-0 p-3" target="_blank">
-            
-        <div class="card-body">
-        <h3 class="card-title text-white sito-tematico">
-            FOIA Attiva        </h3>
-        <p class="card-text text-sans-serif text-white">
-            Sezione trasparenza di Jonez Services, amministrata da GJWS in stretta collaborazione a Jonez services e Jonez distetto direttivo</p>
-    </div>
-</a>
-<a href="https://agfo.fvg.it/" class="card card-teaser card-bg-black rounded mt-0 p-3" target="_blank">
-            
-        <div class="card-body">
-        <h3 class="card-title text-white sito-tematico">
-            AGFO                 </h3>
-        <p class="card-text text-sans-serif text-white">
-            Arena Giovani, progetto civico per l'avancamento dei giovani, nel futuro.        </p>
-    </div>
-</a>
-<a href="#" class="card card-teaser card-bg-black rounded mt-0 p-3" target="_blank">
-        <div class="card-body">
-        <h3 class="card-title text-white sito-tematico">
-            Bibliotecando        </h3>
-        <p class="card-text text-sans-serif text-white">
-            Bibliotecando        </p>
-    </div>
-</a>    </div>
-  </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
-
-
-
-
-
-
-   
-   
-   {{ content }}
-</div>
+</main>
