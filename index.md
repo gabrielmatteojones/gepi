@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Benvenuto sul sito di Arena Giovani
+title: Jonez Base
 description: n/a
 lang: it
 ref: homepage
