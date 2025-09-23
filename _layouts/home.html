@@ -108,32 +108,6 @@ a---
 
 
 
-<br><div class="bg-dark text-primary px-4 py-5"> <div class="py-5 container"> <h1 class="display-5 fw-bold text-white">Ultimi Documenti</h1> <div class="col-lg-6 mx-auto text-white"></div> </div> </div><br>
-
-<div class="d-flex gap-3 flex-wrap">
-  {% assign sorted_albo = site.albo | sort: 'date' | reverse %}
-  {% for doc in sorted_albo limit:2 %}
-  <div class="card" style="width: 18rem;">
-    <div class="card-body">
-      <h5 class="card-title">{{ doc.title }}</h5>
-      <h6 class="card-subtitle mb-2 text-muted">{{ doc.date | date: "%d %B %Y" }}</h6>
-      <p class="card-text"><em>{{ doc.tipo }}</em></p>
-      <a href="{{ doc.url }}" class="card-link">Vai al documento</a>
-      <a href="{{ doc.file }}" target="_blank" rel="noopener" class="card-link">
-        <i class="it-download"></i> PDF
-      </a>
-    </div>
-  </div>
-  {% endfor %}
-</div>
-
-
-
-
-
-
-
-
 
 
 
