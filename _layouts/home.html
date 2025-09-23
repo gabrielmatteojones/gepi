@@ -109,6 +109,24 @@ title: Jonez
 
 
 
+<h2 class="mb-4">Ultimi Documenti</h2>
+
+<div class="d-flex gap-3 flex-wrap">
+  {% assign sorted_albo = site.albo | sort: 'date' | reverse %}
+  {% for doc in sorted_albo limit:2 %}
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">{{ doc.title }}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">{{ doc.date | date: "%d %B %Y" }}</h6>
+      <p class="card-text"><em>{{ doc.tipo }}</em></p>
+      <a href="{{ doc.url }}" class="card-link">Vai al documento</a>
+      <a href="{{ doc.file }}" target="_blank" rel="noopener" class="card-link">
+        <i class="it-download"></i> PDF
+      </a>
+    </div>
+  </div>
+  {% endfor %}
+</div>
 
 
 
