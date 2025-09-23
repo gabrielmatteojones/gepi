@@ -48,9 +48,3 @@ exclude:
 
 # Informazioni generali del sito
 title: "Jonez Website"
-description: "Blog personale di Gabriel Jones su [argomenti]"
-keywords: "blog, tecnologia, lifestyle, viaggi"
-language: "it"
-og_image: "/assets/logo.png"
-canonical_url: "https://blog.gabrieljones.it/gabrieljones/"
-rss_feed_url: "https://blog.gabrieljones.it/gabrieljones/feed"
