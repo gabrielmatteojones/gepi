@@ -85,3 +85,31 @@ collections:
           - { label: "Descrizione", name: "descrizione", widget: "string", required: false }
       - { label: "Formati disponibili", name: "formati", widget: "list", default: ["PDF"] }
       - { label: "Licenza distribuzione", name: "licenza", widget: "string", default: "pubblico dominio" }
+  - name: "dipartimenti"
+    label: "Dipartimenti"
+    folder: "pages/dipartimenti"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "yaml-frontmatter"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "amministrazione" }
+      - { label: "permalink", name: "permalink", widget: "string", default: "/dipartimenti//" }
+      - { label: "Titolo", name: "title", widget: "string" }
+      - { label: "Descrizione", name: "description", widget: "text" }
+      
+      - label: "In evidenza"
+        name: "featured"
+        widget: "list"
+        fields:
+          - { label: "Titolo", name: "title", widget: "string" }
+          - { label: "URL", name: "url", widget: "string" }
+          - { label: "Testo", name: "text", widget: "text" }
+
+      - label: "Amministrazione"
+        name: "amministrazione"
+        widget: "list"
+        fields:
+          - { label: "Titolo", name: "title", widget: "string" }
+          - { label: "URL", name: "url", widget: "string" }
+          - { label: "Testo", name: "text", widget: "text", required: false }
