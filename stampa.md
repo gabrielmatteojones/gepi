@@ -4,6 +4,7 @@ title: Dipartimento Stampa
 description: >
   Tutte le informazioni sul Dipartimento Stampa di Jonez Org. Scopri gli organi,
   gli uffici dedicati alla comunicazione, i referenti e i documenti pubblici.
+permalink: /esempiostampa/
 
 featured:
   - title: "Rassegna stampa"
