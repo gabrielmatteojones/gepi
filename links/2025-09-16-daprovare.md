@@ -38,6 +38,63 @@ links:
     name: Luke Rex Xbound ⭐
   - url: https://abgay.com/video/250662/muscle-slave-handjob-and-cumshot/?campaign_id=2087227852
     name: Muscle slave handjob and cumshot ⭐
+  - name: segnaposto
+    url: "#"
+  - url: https://www.boyfriendtv.com/videos/1479737/bondage/?utm_source=awn&utm_medium=tgp&utm_campaign=cpc
+    name: "1"
+  - name: "2"
+    url: https://www.4gay.com/videos/27930/at-least-one-of-us-got-to-jism-v-card-pup-jaden-get-s-beef-whistle-d-on-all-4s-left-needy-denied/?utm_source=pbweb
+  - name: "3"
+    url: https://www.boyfriendtv.com/videos/59120/horny-gay-pet-gets-a-bone-while-being/
+  - name: "4"
+    url: https://www.boyfriendtv.com/videos/1357501/burglar-with-no-luck/?utm_source=awn&utm_medium=tgp&utm_campaign=cpc
+  - name: "5"
+    url: https://www.alotporn.com/video/511673/intense-homo-porn-daddy-mugs-dominates-travis-in-rough-sex/?utm_source=pbmedia&utm_medium=ppv&utm_campaign=up#
+  - name: "6"
+    url: https://ita.xhamster.com/videos/slave-training-xhy4X0l?utm_medium=offline
+  - name: "7"
+    url: https://www.gayck.com/videos/25938/into-kinky-dom-man-meat/?utm_source=pbweb
+  - name: "8"
+    url: https://www.gaydudesfucking.com/videos/43345/homosexual-fuck-a-thon-serf-0464/?utm_source=pbweb&utm_medium=pbweb&utm_campaign=pbweb
+  - name: "9"
+    url: https://www.boyfriendtv.com/videos/798672/felix-becomes-my-slave-part-2-sharing-with-friends-no-sex/?utm_source=awn&utm_medium=tgp&utm_campaign=cpc
+  - name: "10"
+    url: https://mrgay.tube/video/10107535/pledge-dog-show-by-s/?campaign=10146
+  - name: "11"
+    url: https://gaytube.site/missionary-boys-holland-s-journey-to-submission_2786192.html?utm_source=awn-rse&utm_medium=inc&utm_campaign=nov01
+  - name: "12"
+    url: https://gaytube.site/archi-roma-guzzle-fest-archi-roma_2775051.html
+  - url: https://www.2bgay.com/videos/12031/break-away/?utm_source=pbweb&utm_medium=pbweb&utm_campaign=gdf
+    name: "13.1"
+  - name: "14"
+    url: https://www.4gay.com/videos/47031/young-twink-is-punished-for-his-part-in-some-misdeeds/?utm_source=pbweb
+  - name: "15"
+    url: https://www.rainblow.xxx/videos/81373/gorgeous-dude-alex-faux-takes-an-electro-butt-plug-into-his-tight-hole/?utm_source=awm&utm_medium=awmtraffic&utm_campaign=rblw&subid1=130001&asgtbndr=1&cid=2079804
+  - name: "16"
+    url: https://abgay.com/video/182576/meet-first-time-puppy-slave-a-tube-fan-and-play-with-him6/?campaign_id=2087227852
+  - name: "17"
+    url: https://www.gaysearch.com/videos/11663/submissive-guy-blows-his-kinky-master-and-gets-spanked-and-fucked/?utm_source=PBWeb&utm_medium=PBWeb&sub=100001
+  - url: https://www.4gay.com/videos/114333/boyforsale-3-slaves-conform-3-schoolteachers-at-a-tough-holiday-soiree/?utm_source=pbweb
+    name: "18.1"
+  - url: https://www.gay4porn.com/videos/33013/day-for-a-serf-2/?utm_source=pbweb
+    name: "19.1"
+  - name: "slave gets rough treatment "
+    url: https://ita.xhamster.com/videos/slave-gets-rough-treatment-13827608
+  - name: Young homo Jake Karhoff jacks off while foot worshiped
+    url: https://love4porn.com/videos/981853/young-homo-jake-karhoff-jacks-off-while-foot/?utm_source=pbw&utm_campaign=plugs&asgtbndr=1&cid=2092961
+  - name: Attractive young stud shows off feet while jerking off
+    url: https://www.429men.com/videos/22289/attractive-young-stud-shows-off-feet-while-jerking-off/?asgtbndr=1&cid=2079757
+  - name: 2 Daddies Dominating Bottom fellow
+    url: https://www.2bgay.com/videos/49675/2-daddies-dominating-bottom-fellow/?utm_source=pbweb&utm_medium=pbweb&utm_campaign=gdf
+  - name: Felix becomes my slave part 2 - sharing with friends (no sex)
+    url: https://www.boyfriendtv.com/videos/798672/felix-becomes-my-slave-part-2-sharing-with-friends-no-sex/?utm_source=awn&utm_medium=tgp&utm_campaign=cpc
+  - name: police officer had to surrender at my stinky feet  9,027 Views   Added
+      2025-08-15
+    url: https://www.boyfriendtv.com/videos/1475987/police-officer-had-to-surrender-at-my-stinky-feet/?utm_source=awn&utm_medium=tgp&utm_campaign=cpc
+  - name: Wooly French Fellow Romps
+    url: https://www.4gay.com/videos/109878/wooly-french-fellow-romps/?utm_source=pbweb
+
+
   - name: Segnaposto
     url: "#"
   - name: "Czech Hunter: Unexpected Bargains at Shopping Centre"
