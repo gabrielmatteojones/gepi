@@ -94,8 +94,8 @@ collections:
     format: "yaml-frontmatter"
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "amministrazione" }
-      - { label: "permalink", name: "permalink", widget: "string", default: "/dipartimenti//" }
       - { label: "Titolo", name: "title", widget: "string" }
+      - { label: "permalink", name: "permalink", widget: "string", default: "/dipartimenti//" }
       - { label: "Descrizione", name: "description", widget: "text" }
       
       - label: "In evidenza"
@@ -113,3 +113,22 @@ collections:
           - { label: "Titolo", name: "title", widget: "string" }
           - { label: "URL", name: "url", widget: "string" }
           - { label: "Testo", name: "text", widget: "text", required: false }
+          
+  - name: "books"
+    label: "Libri"
+    folder: "_books"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - { label: "Titolo", name: "title", widget: "string" }
+      - { label: "Autore", name: "author", widget: "string" }
+      - { label: "Categoria", name: "category", widget: "string" }
+      - { label: "Appartenenza", name: "ownership", widget: "string" }
+      - { label: "Editore", name: "publisher", widget: "string" }
+      - { label: "Anno", name: "year", widget: "string" }
+      - { label: "Copertina", name: "cover", widget: "image" }
+      - { label: "Descrizione", name: "description", widget: "text" }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "lastbook" }
+      - { label: "Permalink", name: "permalink", widget: "string", default: "/lastbook/{{slug}}/" }
