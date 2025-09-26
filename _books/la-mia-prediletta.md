@@ -1,4 +1,5 @@
 ---
+layout: book
 title: La mia prediletta
 author: Romy Hausmann
 category: 833.914 – Narrativa tedesca contemporanea
