@@ -11,8 +11,8 @@ disqus:
 google_analytics:
 
 # URL del sito
-url: "https://jonez.it"
-baseurl: "/"
+url: "https://gabrielmatteojones.github.io"
+baseurl: "/udgj/"
 
 # Permalink dei post (usa :author e :title)
 collections:
