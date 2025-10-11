@@ -1,566 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
 
-<!doctype html>
-<html lang="it">
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- CSS -->
-        <link rel="stylesheet" href="../dist/css/bootstrap-unito-amaranto.configs.css">
-    <link rel="stylesheet" href="https://cdn.unito.it/unito-theme/v3/css/bootstrap-unito.min.css">
-    <link rel="stylesheet" href="https://cdn.unito.it/unito-theme/v3/css/slider.min.css">
-<style>
-  :root {
-    /* footer */
-    --footerBG: #54565a;
-    --footerFG: #ffffff;
-    /*
-    page level
-    */
-    --mainTxt: #1A1A1A; /* UPD 2024 */
-    --lighGrey: #F4F4F4; /* NEW 2024 */
-    --darkGrey: #54565A; /* NEW 2024 */
-    --otto: #1a2b2a; /* NEW 2024 */
-    --beige: #f5f5dc; /* NEW 2024 */
-    --mainBG: #ffffff;
-    /* tipography */
-    --mainFG: #B91734;
-    --mainFGrgba75: rgba(234, 0, 41, .75);
-    --mainFGhover: #830C17;
-    --mainFGlightred: #ff8f99;
-    --mainFGDarker: #666;
-    --mainFGDarkerhov: #323c46;
-    --mainBGdarker: #cacacc;
-    --mainDarkFG: white;
-    /* header */
-    --headerBG: #B91734;
-    --headerBGdarker: #b3121f;
-    --headerBGlight: #f2f2f2;
-    --headerFG: #B91734;
-    --mainCapt: #B91734;
-    --headerFGlight: white;
-    --headerLightBG: white;
-    --headerLightFG: #B91734;
-    --headerDarkFG: white;
-    --headerMobileBG: #ff8f99;
-    /* pickers and labels */
-    --pickerLabel: #5c6f82;
-    --pickerDarkBG: var(--darkGrey); /* UPD 2024 */
-    /* tables */
-    --tableTxt: var(--mainTxt); /* UPD 2024 */
-    --tableBrd: #d6dce3;
-    --tableBGodd: #f6f7f9;
-    --tableDarkTxt: white;
-    --tableDarkheadBG: #bec6cd;
-    --tableDarkbrd: #8694a2;
-    --tableDarkheadBG: #330509;
-    --tableDarkBG: #B91734;
-    /* buttons */
-    --BtnFG:  #1A1A1A; /* UPD 2024 */
-    --BtnpriFG: white;
-    --BtnpridisFG:  #435a70;
-    --BtnpridisBG: #e6e9f2;
-    --Btnpridisbrd: #dfe4f2;
-    --BtnsecFG: white;
-    --BtnsecBG: var(--darkGrey); /* UPD 2024 */
-    --Btnsechov:  #4c5c6c;
-    --Btnsecdis:  #5c6f82;
-    --BtnOutlinesecFG:#fcfdff;
-    --BtnOutlinsechov: #e6e6e6;;
-    --BtnOutlineBG: #B91734;
-    --BtnOutlinehov: #9f1a25;
-    --BtnOutlinesechov: #50565c;
-    --Btnlnk: #B91734;
-    --Btnlnkhov: #830C17;
-    --Btnlnkdis: #656566;
-    --BgDarkBG: white;
-    --BgDarkFG: #B91734;
-    --BgDarkhovFG: #4c0c11;
-    /* icons */
-    --icon_pri: #B91734;
-    --icon_sec: #5c6f82;
-    --icon_succ: #008758;
-    --icon_info: #979899;
-    --icon_warn: #a66300;
-    --icon_dang: #d9364f;
-    --icon_light: #e9e6f2;
-    --icon_dark: #17324d;
-    --icon_blk: #000;
-    --icon_whi: #fff;
-    --sliderAltBG: #B91734; /* NEW 2024 */
-    --sliderAltBGrgba75: rgba(234, 0, 41, .75);  /* NEW 2024 */
-}
-/* Titillium Font */
+	<meta name="generator" content="Hugo 0.80.0" />
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Leggere è vivere due volte - Gabriel Jones</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/images/social/logo.svg">
 
-@font-face {
-    font-family: 'Titillium Web';
-    font-style: normal;
-    font-weight: 200;
-    font-display: swap;
-    src: local(''), url(https://cdn.unito.it/unito-theme/v3/fonts/Titillium_Web/TitilliumWeb-ExtraLight.woff2) format('woff2'), url(https://cdn.unito.it/unito-theme/v3/fonts/Titillium_Web/TitilliumWeb-ExtraLight.woff) format('woff'), url(https://cdn.unito.it/unito-theme/v3/fonts/Titillium_Web/TitilliumWeb-ExtraLight.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: 'Titillium Web';
-    font-style: normal;
-    font-weight: 300;
-    font-display: swap;
-    src: local(''), url(https://cdn.unito.it/unito-theme/v3/fonts/Titillium_Web/TitilliumWeb-Light.woff2) format('woff2'), url(https://cdn.unito.it/unito-theme/v3/fonts/Titillium_Web/TitilliumWeb-Light.woff) format('woff'), url(https://cdn.unito.it/unito-theme/v3/fonts/Titillium_Web/TitilliumWeb-Light.ttf) format('truetype');
-}
-@font-face {
-    font-family: 'Titillium Web';
-    font-style: italic;
-    font-weight: 300;
-    font-display: swap;
-    src: local(''),url(https://cdn.unito.it/unito-theme/v3/fonts/Titillium_Web/TitilliumWeb-italic.woff2) format('woff2'), url(https://cdn.unito.it/unito-theme/v3/fonts/Titillium_Web/TitilliumWeb-italic.woff) format('woff'), url(https://cdn.unito.it/unito-theme/v3/fonts/Titillium_Web/TitilliumWeb-italic.ttf) format('truetype');
-}
-@font-face {
-    font-family: 'Titillium Web';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: local(''),url(https://cdn.unito.it/unito-theme/v3/fonts/Titillium_Web/TitilliumWeb-Regular.woff2) format('woff2'), url(https://cdn.unito.it/unito-theme/v3/fonts/Titillium_Web/TitilliumWeb-Regular.woff) format('woff'), url(https://cdn.unito.it/unito-theme/v3/fonts/Titillium_Web/TitilliumWeb-Regular.ttf) format('truetype');
-}
-@font-face {
-    font-family: 'Titillium Web';
-    font-style: italic;
-    font-weight: 400;
-    font-display: swap;
-    src: local(''),url(https://cdn.unito.it/unito-theme/v3/fonts/Titillium_Web/TitilliumWeb-italic.woff2) format('woff2'), url(https://cdn.unito.it/unito-theme/v3/fonts/Titillium_Web/TitilliumWeb-italic.woff) format('woff'), url(https://cdn.unito.it/unito-theme/v3/fonts/Titillium_Web/TitilliumWeb-italic.ttf) format('truetype');
-}
-@font-face {
-    font-family: 'Titillium Web';
-    font-style: normal;
-    font-weight: 500;
-    font-display: swap;
-    src: local(''), url(https://cdn.unito.it/unito-theme/v3/fonts/Titillium_Web/TitilliumWeb-SemiBold.woff2) format('woff2'), url(https://cdn.unito.it/unito-theme/v3/fonts/Titillium_Web/TitilliumWeb-SemiBold.woff) format('woff'), url(https://cdn.unito.it/unito-theme/v3/fonts/Titillium_Web/TitilliumWeb-SemiBold.ttf) format('truetype');
-}
-@font-face {
-    font-family: 'Titillium Web';
-    font-style: italic;
-    font-weight: 500;
-    font-display: swap;
-    src: local(''),url(https://cdn.unito.it/unito-theme/v3/fonts/Titillium_Web/TitilliumWeb-italic.woff2) format('woff2'), url(https://cdn.unito.it/unito-theme/v3/fonts/Titillium_Web/TitilliumWeb-italic.woff) format('woff'), url(https://cdn.unito.it/unito-theme/v3/fonts/Titillium_Web/TitilliumWeb-italic.ttf) format('truetype');
-}
-@font-face {
-    font-family: 'Titillium Web';
-    font-style: normal;
-    font-weight: 600;
-    font-display: swap;
-    src: local(''), url(https://cdn.unito.it/unito-theme/v3/fonts/Titillium_Web/TitilliumWeb-Bold.woff2) format('woff2'), url(https://cdn.unito.it/unito-theme/v3/fonts/Titillium_Web/TitilliumWeb-Bold.woff) format('woff'), url(https://cdn.unito.it/unito-theme/v3/fonts/Titillium_Web/TitilliumWeb-Bold.ttf) format('truetype');
-}
-@font-face {
-    font-family: 'Titillium Web';
-    font-style: italic;
-    font-weight: 600;
-    font-display: swap;
-    src: local(''),url(https://cdn.unito.it/unito-theme/v3/fonts/Titillium_Web/TitilliumWeb-italic.woff2) format('woff2'), url(https://cdn.unito.it/unito-theme/v3/fonts/Titillium_Web/TitilliumWeb-italic.woff) format('woff'), url(https://cdn.unito.it/unito-theme/v3/fonts/Titillium_Web/TitilliumWeb-italic.ttf) format('truetype');
-}
-@font-face {
-    font-family: 'Titillium Web';
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
-    src: local(''), url(https://cdn.unito.it/unito-theme/v3/fonts/Titillium_Web/TitilliumWeb-Bold.woff2) format('woff2'), url(https://cdn.unito.it/unito-theme/v3/fonts/Titillium_Web/TitilliumWeb-Bold.woff) format('woff'), url(https://cdn.unito.it/unito-theme/v3/fonts/Titillium_Web/TitilliumWeb-Bold.ttf) format('truetype');
-}
-@font-face {
-    font-family: 'Titillium Web';
-    font-style: italic;
-    font-weight: 700;
-    font-display: swap;
-    src: local(''),url(https://cdn.unito.it/unito-theme/v3/fonts/Titillium_Web/TitilliumWeb-italic.woff2) format('woff2'), url(https://cdn.unito.it/unito-theme/v3/fonts/Titillium_Web/TitilliumWeb-italic.woff) format('woff'), url(https://cdn.unito.it/unito-theme/v3/fonts/Titillium_Web/TitilliumWeb-italic.ttf) format('truetype');
-}
-</style>
-<style>
-
-  #theme-switcher label {
-    color: white !important;
-}
-.theme-switcher {
-    position: fixed;
-    right: 0.7rem;
-    bottom: 0;
-    transform: translateY(-50%);
-    z-index: 1000;
-    background-color: var(--mainFG);
-    padding: 0.5rem;
-    border-radius: 0.4rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    transition: right 0.3s;
-}
-
-/* Nasconde il theme switcher finchÃ© non viene mosso il mouse sulla sua posizione */
-.theme-switcher:hover {
-    right: 0;
-}
-select#theme {
-    border: 0
-}
-</style>    
-    
-    
-    
-    
-    <!-- FAVICON -->
-    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.unito.it/unito-loghi/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.unito.it/unito-loghi/favicon/favicon-16x16.png">
-    <link rel="manifest" href="https://cdn.unito.it/unito-loghi/favicon/site.webmanifest">
-    <link rel="mask-icon" href="https://cdn.unito.it/unito-loghi/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.unito.it/unito-loghi/favicon/apple-touch-icon.png">
-    <!-- Windows Os Start Screen color  -->
-    <meta name="msapplication-TileColor" content="#e3e4e6">
-    <!-- Browser UI Color  -->
-    <meta name="theme-color" content="#ffffff">
-    <title>{{ page.title }} - Ufficio Gabriel Jones</title>
-    <style>
-
-    </style>
-</head>
-<body class="container">
-<div class="skiplinks">
-    <a class="visually-hidden-focusable" href="#content">Vai al contenuto principale</a>
-</div>
-<div class="ContentContainer">
-    <!-- inizio header struttura -->
-
-
-    <div class="it-header-wrapper it-shadow container p-0">
-        <div class="it-header-slim-wrapper theme-light">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="it-header-slim-wrapper-content p-1">
-                            <a class="d-none d-lg-block navbar-brand" href="#">
-<h1><b>Jonez Systems</b></h1>
-                              <div class="it-header-slim-right-zone">
-                                <ul class="navbar-nav d-flex d-lg-none">
-                                    <li class="nav-item dropdown d-flex" id="cambio_lingua_mobile">
-                                        <button type="button" aria-expanded="false" aria-controls="menu_cambio_lingua_mobile" aria-label="Cambia lingua" >ITA</button>
-                                        <div class="dropdown-menu" id="menu_cambio_lingua_mobile">
-                                            <div class="link-list-wrapper ">
-                                                <ul class="link-list">
-                                                    <li><a class="list-item" href="#" ><span>ITA</span></a></li>
-                                                    <li><a class="list-item" href="#" ><span>ENG</span></a></li>
-                                                    <li><a class="list-item" href="#" ><span>FRA</span></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <ul class="navbar-nav">
-                                    <li class="nav-item dropdown d-flex" id="accesso_rapido">
-                                        <button type="button" aria-expanded="false" aria-controls="menu_accesso_rapido" aria-label="Accesso Rapido" >Accesso Rapido</button>
-                                        <div class="dropdown-menu" id="menu_accesso_rapido">
-                                            <div class="link-list-wrapper">
-                                                <ul class="link-list">
-                                                    <li><a class="list-item" href="#" ><span>Link 1</span></a></li>
-                                                    <li><a class="list-item" href="#" ><span>Link 2</span></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <!--<a href="#" id="login" class="d-block d-lg-none" aria-label="Login" title="Login">Login</a>-->
-                                <div class="d-flex d-lg-none">
-                                    <a id="SearchMobileOpen" role="button" class="SearchMobileTrigger search-link rounded-icon" aria-label="Apri la ricerca" href="#">
-                                        <svg role="img" aria-describedby="title_searchMobile" class="icon">
-                                            <title id="title_searchMobile">Apri la ricerca</title><use xlink:href="../dist/svg/sprite.svg#it-search"></use>
-                                        </svg>
-                                    </a>
-                                    <a id="SearchMobileClose" role="button" class="SearchMobileTrigger d-none search-link rounded-icon" aria-label="Chiudi la ricerca" href="#">
-                                        <svg role="img" aria-describedby="title_searchMobileClose" class="icon">
-                                            <title id="title_searchMobileClose">Chiudi la ricerca</title><use xlink:href="../dist/svg/sprite.svg#it-close"></use>
-                                        </svg>
-                                    </a>
-                                </div>
-                                <div class="it-access-top-wrapper d-none d-lg-block">
-                                    <a href="#" class="ps-2"><img src="../assets/images/LogoUNITA.png" width="40" alt="UniTa"></a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="it-nav-wrapper">
-            <div class="it-header-center-wrapper theme-light">
-                <div class="container h-100 ps-0 pe-0">
-                    <div class="row h-100 align-items-center">
-                        <div class="col-12 ">
-                            <div class="it-header-center-content-wrapper">
-                                <div class="it-brand-wrapper d-flex">
-                                    <button class="custom-navbar-toggler" type="button" aria-controls="nav02" aria-expanded="false" aria-label="Toggle navigation" data-bs-target="#nav02" data-bs-toggle="navbarcollapsible">
-                                        <svg role="navigation" aria-describedby="my-title8" class="icon">
-                                            <title id="my-title8">Apri</title><use xlink:href="../dist/svg/sprite.svg#it-burger"></use>
-                                        </svg>
-                                    </button>
-                                    <a href="#">
-                                        <img src="../assets/images/school.png" width="109" alt="Dental School" class="d-none d-lg-block">
-                                        <div class="it-brand-wrapper-descriptor">Centro di Eccellenza per la Ricerca, la Didattica e l'Assistenza in Campo Odontostomatologico - Dental School</div></a>
-                                </div>
-                                <div class="it-right-zone">
-                                    <a class="d-block d-lg-none navbar-brand ps-1" href="#" data-focus-mouse="false">
-                                        <img src="https://cdn.unito.it/unito-loghi/logo_sigillo_orizzontale.svg" height="32" width="86" alt="Università degli Studi di Torino"></a>
-                                    <div class="it-access-top-wrapper d-block d-lg-none ps-1 pe-1">
-                                        <a href="#"><img src="../assets/images/LogoUNITA.png" width="40" alt="UniTa"></a>
-                                    </div>
-                                    <div class="justify-content-between it-socials d-none d-lg-flex">
-                                        <div class="d-flex">
-                                            <ul class="navbar-nav">
-                                                <li class="nav-item dropdown d-flex" id="cambio_lingua">
-                                                    <button type="button" aria-expanded="false" aria-controls="menu_cambio_lingua" aria-label="Cambia lingua" >Italiano</button>
-                                                    <div class="dropdown-menu" id="menu_cambio_lingua">
-                                                        <div class="link-list-wrapper">
-                                                            <ul class="link-list">
-                                                                <li><a class="list-item" href="#" ><span>Italiano</span></a></li>
-                                                                <li><a class="list-item" href="#" ><span>English</span></a></li>
-                                                                <li><a class="list-item" href="#" ><span>Francais</span></a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <ul>
-                                            <li>
-                                                <a href="#" aria-label="Facebook" target="_blank">
-                                                    <svg role="img" aria-describedby="social_1" class="icon">
-                                                        <title id="social_1">Facebook</title><use xlink:href="../dist/svg/sprite.svg#it-facebook"></use>
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" aria-label="Twitter" target="_blank">
-                                                    <svg role="img" aria-describedby="social_2" class="icon">
-                                                        <title id="social_2">Twitter</title><use xlink:href="../dist/svg/sprite.svg#it-twitter"></use>
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" aria-label="Instagram" target="_blank">
-                                                    <svg role="img" aria-describedby="social_3" class="icon">
-                                                        <title id="social_3">Instagram</title><use xlink:href="../dist/svg/sprite.svg#it-instagram"></use>
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" aria-label="Instagram" target="_blank">
-                                                    <svg role="img" aria-describedby="social_4" class="icon">
-                                                        <title id="social_4">LinkedIn</title><use xlink:href="../dist/svg/sprite.svg#it-linkedin"></use>
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" aria-label="Instagram" target="_blank">
-                                                    <svg role="img" aria-describedby="social_5" class="icon">
-                                                        <title id="social_5">Youtube</title><use xlink:href="../dist/svg/sprite.svg#it-youtube"></use>
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div id="SearchWrapper" class="it-search-wrapper mt-lg-2 mr-lg-0 mr-lg-1 d-none d-lg-flex">
-                                        <form name="searchForm" class="d-flex w-100" id="searchForm" action="#" method="post">
-                                            <label for="searchField" class="sr-only">Cerca</label>
-                                            <input role="searchbox" autocomplete="off" title="Cerca informazioni o persone" type="text" class="form-control" name="search" id="searchField"  placeholder="Cerca informazioni o persone" aria-label="Cerca">
-                                            <button type="submit" id="searchButton" class="search-link rounded-icon" aria-label="Cerca">
-                                                <svg role="img" aria-describedby="titleCerca" class="icon negative">
-                                                    <title id="titleCerca">Cerca</title><use xlink:href="../dist/svg/sprite.svg#it-search"></use>
-                                                </svg>
-                                            </button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="it-header-navbar-wrapper">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 ps-0 pe-0">
-                            <!--start nav-->
-                            <nav class="navbar navbar-expand-lg has-megamenu">
-                                <div class="navbar-collapsable" id="nav02" style="display: none;">
-                                    <div class="menu-wrapper">
-                                        <ul class="navbar-nav">
-                                            <li class="nav-item" id="ateneo"><a class="nav-link" href="#"><span>Ateneo </span></a></li>
-                                            <li class="nav-item" id="didattica"><a class="nav-link"  href="#"><span>Didattica</span></a></li>
-                                            <li class="nav-item" id="ricerca"><a class="nav-link"  href="#"><span>Ricerca</span> <span class="visually-hidden">current</span></a></li>
-                                            <li class="nav-item" id="UniLavoro"><a class="nav-link"  href="#"><span>Università e Lavoro</span></a></li>
-                                            <li class="nav-item dropdown" id="Internazionalita">
-                                                <a class="nav-link dropdown-toggle d-none d-lg-flex" href="#" aria-controls="menu_internazionalita" aria-expanded="false" >
-                                                    <span>Internazionalità</span>
-                                                </a>
-                                                <button type="button" aria-expanded="false" aria-controls="menu_internazionalita" aria-label="Internazionalità" ><span class="d-flex d-lg-none">Internazionalità</span></button>
-                                                <div class="dropdown-menu" id="menu_internazionalita">
-                                                    <div class="link-list-wrapper">
-                                                        <ul class="link-list">
-                                                            <li><a class="list-item" href="#" ><span>Link list 1</span></a></li>
-                                                            <li><a class="list-item" href="#" ><span>Link list 2</span></a></li>
-                                                            <li><a class="list-item" href="#" ><span>Link list 3</span></a></li>
-                                                            <li><a class="list-item" href="#" ><span>Link list 4</span></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="nav-item dropdown megamenu" id="servizi">
-                                                <a class="nav-link dropdown-toggle d-none d-lg-flex" href="https://www.unito.it"  aria-controls="menu_servizi" aria-expanded="false" >
-                                                    <span>Servizi</span>
-                                                </a>
-                                                <button id="servizi2" type="button" aria-expanded="false" aria-controls="menu_servizi" aria-label="Servizi" ><span class="d-flex d-lg-none">Servizi</span></button>
-                                                <div class="dropdown-menu" id="menu_servizi">
-                                                    <div class="row link-list-wrapper">
-                                                        <div class="col-6 col-lg-4 ">
-                                                            <div class="link-list-wrapper">
-                                                                <ul class="link-list">
-                                                                    <li>
-                                                                        <h3 class="no_toc">Heading 1</h3>
-                                                                    </li>
-                                                                    <li><a class="list-item"  href="#"><span>Link list 1</span></a></li>
-                                                                    <li><a class="list-item"   href="#"><span>Link list 2</span></a></li>
-                                                                    <li><a class="list-item"  href="#"><span>Link list 3</span></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-6 col-lg-4 ">
-                                                            <div class="link-list-wrapper">
-                                                                <ul class="link-list">
-                                                                    <li>
-                                                                        <h3 class="no_toc">Heading 2</h3>
-                                                                    </li>
-                                                                    <li><a class="list-item"  href="#"><span>Link list 4</span></a></li>
-                                                                    <li><a class="list-item"  href="#"><span>Link list 5</span></a></li>
-                                                                    <li><a class="list-item"  href="#"><span>Link list 6</span></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-6 col-lg-4 ">
-                                                            <div class="link-list-wrapper">
-                                                                <ul class="link-list">
-                                                                    <li>
-                                                                        <h3 class="no_toc">Heading 3</h3>
-                                                                    </li>
-                                                                    <li><a class="list-item"  href="#"><span>Link list 7</span></a></li>
-                                                                    <li><a class="list-item"  href="#"><span>Link list 8</span></a></li>
-                                                                    <li><a class="list-item"  href="#"><span>Link list 9</span></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    {{ container }}
   
-    <div id="theme-switcher" class="theme-switcher">
-    <label for="theme" class="fs-scale08">Palette</label><br>
-    <select id="theme" class="fs-scale08">
-        <option  value='bootstrap-unito.configs.css'>Principale</option><option  value='bootstrap-unito-blu.configs.css'>Blu Scuro</option><option  value='bootstrap-unito-blu-light.configs.css'>Blu Chiaro</option><option  value='bootstrap-unito-arancio.configs.css'>Arancione</option><option  value='bootstrap-unito-verde.configs.css'>Verde</option><option  selected value='bootstrap-unito-amaranto.configs.css'>Amaranto</option>    </select>
-</div></div>
-<!-- inizio footer -->
-
-<footer class="it-footer standard sticky">
-    <div class="it-footer-small-prints clearfix">
-        <div class="container">
-            <h3 class="sr-only">Sezione Link Utili</h3>
-            <div class="col-6 col-md-3 float-start">
-                <ul class="it-footer-small-prints-list list-inline mb-0 ">
-                    <li class="list-inline-item list-inline-title">Titolo</li>
-                    <li class="list-inline-item"><a href="#" title="Note Legali">Lorem ipsum</a></li>
-                    <li class="list-inline-item"><a href="#" title="Privacy-Cookies">Dolor sit amet</a></li>
-                    <li class="list-inline-item"><a href="#" title="Mappa del sito">Consectetur adipiscing</a></li>
-                </ul>
-            </div>
-            <div class="col-6 col-md-3 float-start">
-                <ul class="it-footer-small-prints-list list-inline mb-0 ">
-                    <li class="list-inline-item list-inline-title">Titolo</li>
-                    <li class="list-inline-item"><a href="#" title="Note Legali">Lorem ipsum</a></li>
-                    <li class="list-inline-item"><a href="#" title="Privacy-Cookies">Dolor sit amet</a></li>
-                    <li class="list-inline-item"><a href="#" title="Mappa del sito">Consectetur adipiscing</a></li>
-                </ul>
-            </div>
-            <div class="col-6 col-md-3 float-start">
-                <ul class="it-footer-small-prints-list list-inline mb-0 ">
-                    <li class="list-inline-item list-inline-title">Titolo</li>
-                    <li class="list-inline-item"><a href="#" title="Note Legali">Lorem ipsum</a></li>
-                    <li class="list-inline-item"><a href="#" title="Privacy-Cookies">Dolor sit amet</a></li>
-                    <li class="list-inline-item"><a href="#" title="Mappa del sito">Consectetur adipiscing</a></li>
-                </ul>
-            </div>
-            <div class="col-6 col-md-3 float-start">
-                <div class="footer-plain-text">
-                    <b>Università degli Studi di Torino</b><br>
-                    Via Verdi, 8 - 10124 Torino<br>
-                    <svg role="img" aria-describedby="my-title" class="icon icon-xs"><title id="my-title">
-                        Telefono</title>
-                        <use xlink:href="../dist/svg/sprite.svg#it-telephone"></use>
-                    </svg>
-                    +39 011 6706111<br>
-                    <svg role="img" aria-describedby="my-title1" class="icon icon-xs"><title id="my-title1">
-                        Email</title>
-                        <use xlink:href="../dist/svg/sprite.svg#it-mail"></use>
-                    </svg>
-                    lorem@ipsum.com<br>
-                    P.I. 02099550010<br>
-                    <div class="mt-2">
-                        <a href="#">
-                            <svg role="img" aria-describedby="my-title2" class="icon icon-xs"><title id="my-title2">
-                                Facebook</title>
-                                <use xlink:href="../dist/svg/sprite.svg#it-facebook"></use>
-                            </svg>
-                        </a>
-                        <a href="#">
-                            <svg role="img" aria-describedby="my-title3" class="icon icon-xs"><title id="my-title3">
-                                LinkedIn</title>
-                                <use xlink:href="../dist/svg/sprite.svg#it-linkedin"></use>
-                            </svg>
-                        </a>
-                        <a href="#">
-                            <svg role="img" aria-describedby="my-title4" class="icon icon-xs"><title id="my-title4">
-                                Twitter</title>
-                                <use xlink:href="../dist/svg/sprite.svg#it-twitter"></use>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</footer>
-<!-- fine footer -->
-<!-- JS -->
-<script src="https://cdn.unito.it/unito-theme/v3/js/bootstrap-unito.bundle.min.js" crossorigin="anonymous"></script>
-<script src="https://cdn.unito.it/unito-theme/v3/js/keyboardNav.min.js" crossorigin="anonymous"></script>
-<script src="https://cdn.unito.it/unito-theme/v3/js/slider.min.js" crossorigin="anonymous"></script>
-<script src="./switcher.js" crossorigin="anonymous"></script>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <script>
-    window.addEventListener('load', function () {
-        var carousel = new myCarousel();
-        carousel.init({
-            id: 'my-carousel',
-            slidenav: true,
-            animate: true,
-            startAnimated: true,
-            interval: 4000
-        });
-    }, false);
+  document.addEventListener('DOMContentLoaded', function () {
+    netlifyIdentity.on('init', user => {
+      if (!user) {
+        // Nessun utente loggato → redirect
+        window.location.href = '/admin/';
+      }
+    });
+    netlifyIdentity.init();
+  });
 </script>
+  
+  <link rel="stylesheet" href="https://18f.it/css/style.min.a1be76d6e5b9199325254d0c59f2120db6f208298ee3becc68c8e0a1893e2b41.css">
+  
+
+  
+    <meta name="description" content="Blog di Gabriel Jones, lettore, bibliotecario, animatore e politico"/>
+    <meta property="og:title" content="Leggere è vivere due volte"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="/"/>
+    
+    <meta property="og:description" content="Blog di Gabriel Jones, lettore, bibliotecario, animatore e politico"/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@gabrieljones"/>
+    <meta name="twitter:creator" content="@gabrieljones"/>
+  
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+
+
+
+
+<body class='page frame page-home'>
+  <div id="menu-main-mobile" class="menu-main-mobile">
+    <ul class="menu">
+        
+        
+            
+                <li class="menu-item-home active">
+                    <a href="/">Home</a>
+                </li>
+            
+        
+            
+                <li class="menu-item-about">
+                    <a href="/about/">About</a>
+                </li>
+            
+        
+            
+                <li class="menu-item-tag">
+                    <a href="https://18f.it/tags/">Tag</a>
+                </li>
+            
+        
+            
+                <li class="menu-item-blog">
+                    <a href="https://18f.it/posts/">Blog</a>
+                </li>
+            
+        
+            
+                <li class="menu-item-contatti">
+                    <a href="/contact/">Contatti</a>
+                </li>
+            
+        
+    </ul>
+</div>
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <a class="header-logo" href="/">Gabriel Jones</a>
+  <div class="menu-main">
+    <ul>
+      
+      
+      
+      
+      <li class="menu-item-home active">
+        <a href="/">
+          <i class='fa fa-home'></i>
+          <span>Home</span>
+        </a>
+      </li>
+      
+      
+      
+      <li class="menu-item-about ">
+        <a href="/about/">
+          
+          <span>About</span>
+        </a>
+      </li>
+      
+      
+      
+      <li class="menu-item-tag ">
+        <a href="https://18f.it/tags/">
+          
+          <span>Tag</span>
+        </a>
+      </li>
+      
+      
+      
+      <li class="menu-item-blog ">
+        <a href="https://18f.it/posts/">
+          
+          <span>Blog</span>
+        </a>
+      </li>
+      
+      
+      
+      <li class="menu-item-contatti ">
+        <a href="/contact/">
+          
+          <span>Contatti</span>
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+  <div id="toggle-menu-main-mobile" class="hamburger-trigger">
+    <button class="hamburger">Menu</button>
+  </div>
+</div>
+    
+
+  
+    <div class="author author-large">
+  <img width="50" class="author-image" src="https://freesvg.org/img/abstract-user-flat-3.png" alt="Gabriel Jones" />
+  <span class="author-name">Amministrazione</span>
+  <span class="author-title">Amministrazione Interni</span>
+</div>
+
+{{ content }}
+
+    <div class="footer">
+  
+  <div class="footer-social">
+    
+      <span class="social-icon social-icon-instagram">
+        <a href="https://instagram.com/gabrielmatteojones_official" title="instagram" target="_blank" rel="noopener">
+          <img src="/images/social/instagram.svg" width="24" height="24" alt="instagram"/>
+        </a>
+      </span>
+    
+      <span class="social-icon social-icon-github">
+        <a href="https://github.com/gabrielmatteojones" title="github" target="_blank" rel="noopener">
+          <img src="/images/social/github.svg" width="24" height="24" alt="github"/>
+        </a>
+      </span>
+    
+      <span class="social-icon social-icon-logo">
+        <a href="/gabrieljones/" title="logo" target="_blank" rel="noopener">
+          <img src="/images/social/logo.svg" width="24" height="24" alt="logo"/>
+        </a>
+      </span>
+    
+  </div>
+  
+</div>
+  </div>
+
+  
+
+  
+
+  
+  <script type="text/javascript" src="/js/bundle.min.df8701b5f509374aa1fd6b7f39e6100d9eedbb268d023d3bec1a6e8220fd6dee.js"></script>
+  
+
+  
+  
+
+  
+  
+  
+    
+  
+
+
 </body>
 </html>
-                                        
