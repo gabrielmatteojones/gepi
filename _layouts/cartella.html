@@ -1,44 +1,21 @@
 ---
-layout: base
----
----
-layout: base
+layout: default
 ---
 
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.16.0/dist/css/bootstrap-italia.min.css" rel="stylesheet">
-
-<div class="block listing simpleCard">
-  <div class="public-ui">
-    <div class="full-width" aria-live="polite">
-      <div class="px-4 container">
-        <div class="simple-card-compact-template">
-          <div class="row">
-            <div class="col">
-              <h2 class="mb-4 mt-5 title-bottom-line">Sei in: {{ page.title }}</h2>
-            </div>
-          </div>
-          <div class="card-wrapper card-teaser-wrapper card-teaser-wrapper-equal card-teaser-block-3 mb-3">
-
-            {% for link in page.links %}
-              <div class="align-items-center rounded shadow card-teaser card">
-                <div class="icon-argument-container"></div>
-                <div class="card-body">
-                  <h3 class="card-title">
-                    <a data-element="custom-category-link" href="{{ link.url }}">{{ link.name }}</a>
-                  </h3>
-                  <p>
-                    | {{ link.title }} <br>|  {{ link.url }}
-                    <b>Collezione:</b> {{ page.title }}
-                  </p>
-                </div>
-              </div>
-            {% endfor %}
-
-          </div>
+<div class="card-wrapper card-teaser-wrapper card-teaser-wrapper-equal card-teaser-block-3 mb-3 row">
+  {% for link in page.links %}
+    <div class="col-md-4 mb-4">
+      <div class="align-items-center rounded shadow card-teaser card h-100">
+        <div class="icon-argument-container"></div>
+        <div class="card-body">
+          <h3 class="card-title">
+            <a data-element="custom-category-link" href="{{ link.url }}">{{ link.name }}</a>
+          </h3>
+          <p>
+            <b>Collezione:</b> {{ page.title }}
+          </p>
         </div>
       </div>
     </div>
-  </div>
+  {% endfor %}
 </div>
