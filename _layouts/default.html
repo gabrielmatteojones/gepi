@@ -47,155 +47,79 @@
 
 
 <body class='page frame page-home'>
-  <div id="menu-main-mobile" class="menu-main-mobile">
-    <ul class="menu">
-        
-        
-            
-                <li class="menu-item-home active">
-                    <a href="/">Home</a>
-                </li>
-            
-        
-            
-                <li class="menu-item-about">
-                    <a href="/about/">About</a>
-                </li>
-            
-        
-            
-                <li class="menu-item-tag">
-                    <a href="https://18f.it/tags/">Tag</a>
-                </li>
-            
-        
-            
-                <li class="menu-item-blog">
-                    <a href="https://18f.it/posts/">Blog</a>
-                </li>
-            
-        
-            
-                <li class="menu-item-contatti">
-                    <a href="/contact/">Contatti</a>
-                </li>
-            
-        
-    </ul>
-</div>
-  <div id="wrapper" class="wrapper">
-    <div class='header'>
-  <a class="header-logo" href="/">Gabriel Jones</a>
-  <div class="menu-main">
-    <ul>
-      
-      
-      
-      
-      <li class="menu-item-home active">
-        <a href="/">
-          <i class='fa fa-home'></i>
-          <span>Home</span>
-        </a>
-      </li>
-      
-      
-      
-      <li class="menu-item-about ">
-        <a href="/about/">
-          
-          <span>About</span>
-        </a>
-      </li>
-      
-      
-      
-      <li class="menu-item-tag ">
-        <a href="https://18f.it/tags/">
-          
-          <span>Tag</span>
-        </a>
-      </li>
-      
-      
-      
-      <li class="menu-item-blog ">
-        <a href="https://18f.it/posts/">
-          
-          <span>Blog</span>
-        </a>
-      </li>
-      
-      
-      
-      <li class="menu-item-contatti ">
-        <a href="/contact/">
-          
-          <span>Contatti</span>
-        </a>
-      </li>
-      
-    </ul>
+<header class="it-header-wrapper">
+  <div class="it-header-slim-wrapper">
+    <div class="container-xxl">
+      <div class="row">
+        <div class="col-12">
+          <div class="it-header-slim-wrapper-content">
+            <a class="d-none d-lg-block navbar-brand" href="#">Ente appartenenza</a>
+            <div class="nav-mobile">
+              <nav aria-label="Navigazione secondaria">
+                <a class="it-opener d-lg-none" data-bs-toggle="collapse" href="#menuC1" role="button" aria-expanded="false" aria-controls="menuC1">
+                  <span>Ente appartenenza</span>
+                  <svg class="icon" aria-hidden="true"><use href="/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use></svg>
+                </a>
+                <div class="link-list-wrapper collapse" id="menuC1">
+                  <ul class="link-list">
+                    <li><a class="dropdown-item list-item" href="#">Link 1</a></li>
+                    <li><a class="list-item active" href="#" aria-current="page">Link 2 (Attivo)</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <div class="it-header-slim-right-zone">
+              <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="visually-hidden">Selezione lingua: lingua selezionata</span>
+                  <span>ITA</span>
+                  <svg class="icon d-none d-lg-block"><use href="/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use></svg>
+                </a>
+                <div class="dropdown-menu">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="link-list-wrapper">
+                        <ul class="link-list">
+                          <li><a class="dropdown-item list-item" href="#"><span>ITA <span class="visually-hidden">selezionata</span></span></a></li>
+                          <li><a class="dropdown-item list-item" href="#"><span>ENG</span></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="it-access-top-wrapper">
+                <a class="btn btn-primary btn-sm" href="#">Accedi</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <div id="toggle-menu-main-mobile" class="hamburger-trigger">
-    <button class="hamburger">Menu</button>
+  <div class="it-nav-wrapper">
+    <div class="it-header-center-wrapper">
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col-12">
+            <div class="it-header-center-content-wrapper">
+              <div class="it-brand-wrapper">
+                <a href="#">
+                  <svg class="icon" aria-hidden="true"><use href="/sprites.svg#it-pa"></use></svg>
+                  <div class="it-brand-text">
+                    <div class="it-brand-title">AgoraCMS</div>
+                    <div class="it-brand-tagline d-none d-md-block">Ufficio Digitale di Gabriel</div>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
-    
-
-  
-    <div class="author author-large">
-  <img width="50" class="author-image" src="https://freesvg.org/img/abstract-user-flat-3.png" alt="Gabriel Jones" />
-  <span class="author-name">Amministrazione</span>
-  <span class="author-title">Amministrazione Interni</span>
-</div>
-
-{{ content }}
-
-    <div class="footer">
-  
-  <div class="footer-social">
-    
-      <span class="social-icon social-icon-instagram">
-        <a href="https://instagram.com/gabrielmatteojones_official" title="instagram" target="_blank" rel="noopener">
-          <img src="/images/social/instagram.svg" width="24" height="24" alt="instagram"/>
-        </a>
-      </span>
-    
-      <span class="social-icon social-icon-github">
-        <a href="https://github.com/gabrielmatteojones" title="github" target="_blank" rel="noopener">
-          <img src="/images/social/github.svg" width="24" height="24" alt="github"/>
-        </a>
-      </span>
-    
-      <span class="social-icon social-icon-logo">
-        <a href="/gabrieljones/" title="logo" target="_blank" rel="noopener">
-          <img src="/images/social/logo.svg" width="24" height="24" alt="logo"/>
-        </a>
-      </span>
-    
-  </div>
-  
-</div>
-  </div>
-
-  
-
-  
-
-  
-  <script type="text/javascript" src="/js/bundle.min.df8701b5f509374aa1fd6b7f39e6100d9eedbb268d023d3bec1a6e8220fd6dee.js"></script>
-  
-
-  
-  
-
-  
-  
-  
-    
-  
-
-
+</header>
+  {{ content }}
 </body>
 </html>
