@@ -4,6 +4,6 @@ title: Jonez Base
 description: n/a
 lang: it
 ref: homepage
-permalink: /
+permalink: /hehe
 order: 1
 ---
