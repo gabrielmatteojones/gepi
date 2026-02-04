@@ -1,7 +1,7 @@
 ---
 title: dashboard
 layout: cartella
-permalink: /dashboard/
+permalink: /
 links:
   - url: /vp/bdsm/
     name: BDSM
