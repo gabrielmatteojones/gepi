@@ -13,7 +13,7 @@ google_analytics:
 # URL del sito
 url: "https://gabrielmatteojones.github.io/"
 baseurl: "/udgj/"
-dek: https://gabrielmatteojones.github.io/desk/
+dek: https://bw.jareads.org/
 
 # Permalink dei post (usa :author e :title)
 collections:
